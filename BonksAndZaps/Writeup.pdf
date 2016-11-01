@@ -1,0 +1,845 @@
+<!DOCTYPE HTML >
+<html  lang="en-GB-aucomm"> 
+ <head>
+  <title>Review Submission History: Individual assignment: Bonks and ...</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta id="request-method" name="request-method" content="GET">
+  <meta name="author" content="Blackboard">
+  <meta name="copyright" content="&copy; 1997-2016 Blackboard Inc. All Rights Reserved. US Patent No. 7,493,396 and 7,558,853. Additional Patents Pending.">
+  <meta name="keywords" content="Blackboard">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="/ui/bb-icon2.ico">
+    <link rel="stylesheet" type="text/css" href="/common/shared.css?v=9.1.201404.160205-4" id="css_0">
+    <link rel="stylesheet" type="text/css" href="/branding/themes/pau_aberlearn_2014/theme.css?v=9.1.201404.160205-4" id="css_1">
+    <link rel="stylesheet" type="text/css" href="/branding/themes/pau_aberlearn_2014/app_nav.css?v=9.1.201404.160205-4" id="css_2">
+    <link rel="stylesheet" type="text/css" href="/branding/_1_1/brand.css?ts=1476703990627&v=9.1.201404.160205-4" id="css_3">
+    <link rel="stylesheet" type="text/css" href="/webapps/assignment/css/assignment.css?v=9.1.201404.160205-4" id="css_4">
+    <link rel="stylesheet" type="text/css" href="/webapps/rubric/css/rubrics.css?v=9.1.201404.160205-4" id="css_5">
+    <link rel="stylesheet" type="text/css" href="/webapps/inline-grading/css/grading.css?v=9.1.201404.160205-4" id="css_6">
+          <style type="text/css" id="courseMenuCustomCSS">
+
+.noteditmode .listCm .courseMenu a:hover span, 
+.noteditmode .listCm .courseMenu a:focus span {
+	color:#444444!important;
+}
+
+
+#courseMenuPalette div.navPaletteContent ul li a, 
+#courseMenuPalette h3 a, 
+#previewCourseMenu h3 a,
+.navPaletteContent h3 a.submenuLink:before, 
+.navPaletteContent h3 a.submenuLink_active:before,
+ #courseMenuPalette div.navPaletteContent ul li a span, 
+ #courseMenuPalette .navPaletteContent .subhead
+{
+  color: #444444;
+  text-shadow: none;
+}
+
+#courseMenuPalette ul.courseMenu li.divider hr
+{
+  background-color: #444444;
+}
+
+#courseMenuPalette ul.courseMenu li h4
+{
+  color: #444444;
+}
+
+#courseMenuPalette h4.treehead
+{
+  color: #444444;
+}
+
+#courseMenuPalette div.navPaletteContent
+{
+  background-color: #FFCC00;
+}
+
+/*Active course menu view bubble stem*/
+#courseMenuPalette .actionBarMicro .active > a:after {
+ 	border-bottom-color: #FFCC00;
+}
+
+
+</style>
+      <style type="text/css">.topGlobalLinks a.home{background-image:url(/images/console/icons/home_0.gif)}.bottom-buttons-home a{background-image:url(/images/console/icons/home_0.gif);background-repeat:no-repeat;background-position:50% 0}.topGlobalLinks a.help{background-image:url(/images/console/icons/help_0.gif)}.bottom-buttons-help a{background-image:url(/images/console/icons/help_0.gif);background-repeat:no-repeat;background-position:50% 0}.topGlobalLinks a.logout{background-image:url(/images/console/icons/logout_0.gif)}.global-nav-bar .logout-link,.global-nav-bar .logout-link:hover,.global-nav-bar .logout-link:focus{background-image:url(/images/console/icons/logout_0.gif);background-repeat:no-repeat;background-position:50% 0}</style>
+       <link rel="stylesheet" type="text/css" media="print" href="/ui/styles/print.css?v=9.1.201404.160205-4">
+    <script type="text/javascript" src="/javascript/i18n.js?v=9.1.201404.160205-4"></script>
+      <script language='javascript' type='text/javascript'>
+
+var JS_RESOURCES = new Object();
+
+function _init_bundle_JS_RESOURCES() {
+
+    JS_RESOURCES['validate.range.lessthen.str'] = 'Less Than {0}';
+    JS_RESOURCES['notification.submit'] = 'Action already submitted.\nWait until the action is complete.';
+    JS_RESOURCES['field_name.substitute'] = '\'\'{0}\'\' input field';
+    JS_RESOURCES['validation.number'] = 'A valid numeric value must be entered: {0}.';
+    JS_RESOURCES['confirm.remove_item'] = 'This action is final and cannot be undone. Continue?';
+    JS_RESOURCES['validation.option.required'] = 'At least one option must be selected from the list.';
+    JS_RESOURCES['validate.alignment.missing.content'] = 'You selected alignments, but did not select any alignable content to copy.';
+    JS_RESOURCES['validate.range.morethen.str'] = 'More Than {0}';
+    JS_RESOURCES['validation.radio.required'] = 'Make a selection to continue.';
+    JS_RESOURCES['validation.negative'] = 'A valid non-negative value must be entered: {0}.';
+    JS_RESOURCES['validate.range.between.str'] = 'Between {0} and {1}';
+    JS_RESOURCES['validation.password'] = 'Password cannot be empty or contain only spaces.';
+    JS_RESOURCES['invalid_char.space'] = 'space';
+    JS_RESOURCES['common.list.separator.comma'] = '{0}, {1}';
+    JS_RESOURCES['validate.invalidate.number.space'] = 'Space';
+    JS_RESOURCES['validation.date_past.confirm'] = 'The time is in the past.\nContinue with this time?';
+    JS_RESOURCES['validation.date.required'] = 'A complete date value must be provided: {0}.';
+    JS_RESOURCES['validation.invalid_chars'] = 'Contains illegal characters: {0}.\nDelete these characters: {1}';
+    JS_RESOURCES['validation.mismatch'] = 'The values entered do not match: {0}.\nConfirm: {0}.';
+    JS_RESOURCES['validate.login.invalid.username.or.pass'] = 'Enter a username and password.';
+    JS_RESOURCES['validation.date_equal'] = 'The start date cannot be equal to the end date.';
+    JS_RESOURCES['validation.valid_course_id'] = 'Course ID contains illegal characters or multibyte characters.';
+    JS_RESOURCES['validation.cmp_field.rejected'] = 'The {0} cannot be used without a corresponding {1} value.';
+    JS_RESOURCES['validation.percent'] = 'A valid per-cent value between 0 and 100 must be entered.';
+    JS_RESOURCES['validation.maximum_length.singular'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by one character.';
+    JS_RESOURCES['validation.minimum_length'] = 'A minimum of {0} characters must be entered: {1}.';
+    JS_RESOURCES['active.filter.free.form.text.blank'] = 'Specify a value for the search text field';
+    JS_RESOURCES['validation.invalid_value'] = 'Invalid numeric value provided: {0}.';
+    JS_RESOURCES['validation.multiSelect.maxItems'] = 'Multiselect box should not contain more than {0} number of items.';
+    JS_RESOURCES['vtbe.artifact.footer.validate.nameIfSaveArtifact'] = 'Specify a Name in order to Save as a Reusable Object.';
+    JS_RESOURCES['validation.multiSelect.minItems'] = 'Multiselect box should contain at least {0} number of items.';
+    JS_RESOURCES['validate.enrolloptions.error.codeconflict'] = 'The Access Code Enrolment option conflicts with the selection of {instructor} Led enrolment.';
+    JS_RESOURCES['validation.maximum_length'] = 'Must not contain more than 255 characters';
+    JS_RESOURCES['validation.maximum_length.plural'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by {2} characters.';
+    JS_RESOURCES['validate.enrolloptions.error.nooption'] = 'Warning: Choose either the {instructor} Led or the Self-Enrolment option.';
+    JS_RESOURCES['validation.portal.tool.items.remove'] = 'Delete: {0}?';
+    JS_RESOURCES['active.filter.search.terms'] = 'Search Terms';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited.survey'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the survey. Click OK to save the incomplete answer.';
+    JS_RESOURCES['warning.email'] = 'Email address is a recommended field. Users will be unable to use parts of the system without an email address.';
+    JS_RESOURCES['invalid_char.comma'] = 'comma';
+    JS_RESOURCES['assessment.incomplete.confirm.survey'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the survey. Click OK to submit assessment.';
+    JS_RESOURCES['validation.plain_text.confirm'] = 'To display equations correctly in this document, Smart Text or HTML format must be selected.\nClick \'OK\' to save in selected Plain Text format or click \'Cancel\' to select a new format.';
+    JS_RESOURCES['validation.date_past'] = 'The end date cannot be earlier than the start date.';
+    JS_RESOURCES['validation.allow_negtive.percent'] = 'A valid per-cent value between -100 and 100 must be entered.';
+    JS_RESOURCES['validation.association.refresh.confirm'] = 'The associated items information might have been updated.\nClick \'OK\' to refresh the list or click \'Cancel\' to keep the current page.';
+    JS_RESOURCES['validation.image_type'] = 'Unknown image type: {0}. Image may not display correctly.';
+    JS_RESOURCES['validation.system_role.reserve'] = '"bb" is not permitted at the beginning of a role ID.';
+    JS_RESOURCES['validation.email'] = 'A fully qualified email address (for example, info@blackboard.com) must be entered.';
+    JS_RESOURCES['validation.maximum_length.no_name.singular'] = 'Must not contain more than {0} characters.\nReduce the size of the input by one character.';
+    JS_RESOURCES['validate.invalidate.number'] = 'Please input valid number instead of {0}.';
+    JS_RESOURCES['validation.required'] = 'A value must be provided: {0}.';
+    JS_RESOURCES['list.checkToSelectAllItems'] = 'Tick to select all items';
+    JS_RESOURCES['validation.maximum_length.no_name.plural'] = 'Must not contain more than {0} characters.\nReduce the size of the input by {1} characters.';
+    JS_RESOURCES['validation.url'] = 'A valid URL (for example, http://www.myuniversity.ac.uk) must be entered.';
+    JS_RESOURCES['validate.range.overlap'] = 'criteria ({0}) overlaps criteria ({1}).';
+    JS_RESOURCES['hide.helptext'] = 'Hide Help Text';
+    JS_RESOURCES['confirm.delete_item_value'] = 'This item {0} will be deleted. Continue?';
+    JS_RESOURCES['assessment.incomplete.confirm'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the test. Click OK to submit assessment.';
+    JS_RESOURCES['list.uncheckToDeselectAllItems'] = 'Untick to deselect all items';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited'] = 'The following questions may be incomplete:\n {0}\nClick cancel to return to the test. Click OK to save the incomplete answer.';
+    JS_RESOURCES['validation.time.required'] = 'A complete time value must be provided: {0}.';
+    JS_RESOURCES['vtbe.artifact.footer.validate.saveLocationIfSaveArtifact'] = 'Specify a location for the Reusable Object.';
+    JS_RESOURCES['validation.cmp_field.required'] = 'A value must be provided for {0}\nwhen {1} field is not empty';
+    JS_RESOURCES['active.filter.changed.alert'] = 'criteria now contain';
+    JS_RESOURCES['validate.enrolloptions.error.emailrequestconflict'] = 'The selected email enrolment option conflicts with the self-enrolment selection.';
+    JS_RESOURCES['show.helptext'] = 'Show Help Text';
+    JS_RESOURCES['portalmodule.section.remove'] = 'Delete: {0}?';
+
+    JS_RESOURCES.getString = i18n_get_string;
+    JS_RESOURCES.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_JS_RESOURCES();
+
+</script>
+<script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, d MMM, yyyy';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Monday Tuesday Wednesday Thursday Friday Saturday Sunday';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'dd/MM/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'DD/MM/YY';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['float.format'] = '^([0-9]{1,3}(\\,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'DMY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd d/M';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd d/M';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+    LOCALE_SETTINGS['thousand.sep.format'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'MON TUE WED THU FRI SAT SUN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'MON TUE WED THU FRI SAT SUN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'd[ MMM][ yyyy]{\'&#8212;\'d MMM, yyyy}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+      <script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, d MMM, yyyy';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\,[0-9]{3})*)|[-]?[0-9]*)(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Monday Tuesday Wednesday Thursday Friday Saturday Sunday';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'dd/MM/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'DD/MM/YY';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['float.format'] = '^([0-9]{1,3}(\\,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'DMY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd d/M';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd d/M';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+    LOCALE_SETTINGS['thousand.sep.format'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'MON TUE WED THU FRI SAT SUN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'MON TUE WED THU FRI SAT SUN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'd[ MMM][ yyyy]{\'&#8212;\'d MMM, yyyy}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+         <script type="text/javascript" src="/javascript/prototype.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/fastinit.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/ngui/page.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/validateForm.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/numberLocalizer.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/accessibleSelect.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/popup.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/cookie.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/lz-string.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/client_cache.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/ngui/globalNavigation.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/webapps/assignment/dwr_open/interface/UserDataDWRFacade.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/webapps/blackboard/dwr_open/interface/MashupDWRFacade.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/esapi4js/esapi-compressed.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/esapi4js/resources/i18n/ESAPI_Standard_en_US.properties.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/esapi4js/resources/Base.esapi.properties.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/webapps/assignment/js/grade_assignment.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/webapps/rubric/js/rubricGradingService.js?v=9.1.201404.160205-4_1.2.1120828"></script>
+    <script type="text/javascript" src="/javascript/titlebartagutils.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/webapps/inline-grading/js/aggregate-grading.js?v=9.1.201404.160205-4_1.3.1160963"></script>
+    <script type="text/javascript" src="/webapps/gradebook/js/gradebook_utils.js?v=9.1.201404.160205-4_9.8.1171492"></script>
+    <script type="text/javascript" src="/webapps/inline-grading/js/attempt-grading.js?v=9.1.201404.160205-4_1.3.1160963"></script>
+    <script type="text/javascript" src="/webapps/inline-grading/js/inline-grading-list.js?v=9.1.201404.160205-4_1.3.1160963"></script>
+    <script type="text/javascript" src="/webapps/inline-grading/js/comment-box.js?v=9.1.201404.160205-4_1.3.1160963"></script>
+    <script type="text/javascript" src="/webapps/vtbe-tinymce/javascript/vtbeTinyMce.js?v=9.1.201404.160205-4_11.3.1172559"></script>
+    <script type="text/javascript" src="/webapps/inline-grading/js/common.js?v=9.1.201404.160205-4_1.3.1160963"></script>
+    <script type="text/javascript" src="/webapps/inline-grading/js/inline-grading.js?v=9.1.201404.160205-4_1.3.1160963"></script>
+    <script type="text/javascript" src="/webapps/assignment/dwr_open/interface/CourseMenuDWRFacade.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/webapps/assignment/dwr_open/interface/UserPageInstructionsSettingDWRFacade.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/javascript/dwr/engine.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/ngui/breadcrumbs.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/ngui/tree.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/ngui/coursemenu.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/dwr/util.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/webapps/portal/global_nav_menu.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/webapps/assignment/dwr_open/interface/UserDWRFacade.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/webapps/bb-social-learning-BBLEARN/js/mybb.js?v=9.1.201404.160205-4_9.3.1132344"></script>
+    <script type="text/javascript" src="/webapps/portal/overlay/welcomeOverlay.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/webapps/bb-social-learning-BBLEARN/js/social.js?v=9.1.201404.160205-4_9.3.1132344"></script>
+    <script type="text/javascript" src="/webapps/assignment/dwr_open/interface/ProfileProviderService.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/webapps/assignment/dwr_open/interface/ToolActivityService.js?v=9.1.201404.160205-4_2.4.1171048"></script>
+    <script type="text/javascript" src="/webapps/bb-gate-BBLEARN/js/tool_service.js?v=9.1.201404.160205-4_9.2.1038367"></script>
+    <script type="text/javascript" src="/javascript/browserSpecificBehavior.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/scriptaculous/builder.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/scriptaculous/effects.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/scriptaculous/dragdrop.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/scriptaculous/controls.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/scriptaculous/slider.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/ngui/lightbox.js?v=9.1.201404.160205-4"></script>
+    <script type="text/javascript" src="/javascript/quick_links.js?v=9.1.201404.160205-4"></script>
+    </head>
+  <body >
+  
+<h1 class="hideoff hideFromQuickLinks">Open Quick Links</h1><div id=quick_links_wrap><a id=quick_links_lightbox_link href="#" onclick="quickLinks.lightboxHelper.toggleLightbox(); return false;" role=button aria-haspopup=true tabindex=1 title="Open&#x20;Quick&#x20;Links">Quick Links</a></div><div id=quickLinksLightboxDiv class=hideoff><div class=ax-content><div class=content-lite><div id=quick_links_landmarks_section><h2 class=hideFromQuickLinks>Page Landmarks</h2><ul class=shortcut-list id=quick_links_landmark_list></ul></div><div id=quick_links_headings_section><h2 class=hideFromQuickLinks>Content Outline</h2><ul class=shortcut-list id=quick_links_heading_list></ul></div></div><div id=quick_links_hotkeys_section class=legend><h2 class=hideFromQuickLinks>Keyboard Shortcuts</h2><ul class=keycombos id=quick_links_hotkey_list></ul></div></div></div><h1 class="hideoff hideFromQuickLinks"></h1><div class=global-nav-bar-wrap><div class="global-nav-bar logout"><a id="topframe.logout.label" href="/webapps/login?action=logout" target=_top class="nav-link logout-link" title=Logout> Logout</a></div><div id=global-nav class=global-nav-bar role=navigation data-preview=false><div class=hideoff>Global Menu</div><a id=global-nav-link class="nav-link u_floatThis-right" href="#global-nav-flyout" aria-haspopup=true tabindex=1 accesskey=m role=navigation title="Open&#x20;Global&#x20;Navigation&#x20;menu"><img id=global-avatar src="/images/ci/ng/default_profile_avatar.png" class=global-top-avatar data-tool-title="User Avatar Image" alt="">Aaron Walker<span id=badgeTotal style="visibility: hidden" title=""><span class=hideoff id=badgeAXLabel>Activity Updates</span><span class=badge id=badgeTotalCount title=""></span></span><img src="/images/ci/mybb/arrowDown-topnav.png" id=global-toggle-img class=global-toggle alt="Expand Global Nav"></a><div id=global-nav-flyout class=flyout-menu style="display: none;" role=application><ul id=bottomButtons class=bottom-buttons><li class=bottom-buttons-home><a id="topframe.home.label" href="https://www.aber.ac.uk" target=_blank class=home title=Home role=menuitem> Home</a></li><li class=bottom-buttons-help><a id="topframe.help.label" href="#" onClick="globalNavigation.openHelpWindow('https://faqs.aber.ac.uk/#blackboard');" class=help title=Help role=menuitem> Help</a></li></ul></div></div></div>
+<!-- global_nav.jsp -->
+
+<div id="globalNavPageNavArea" style="height: 89px;">
+    <table class="bouncer">
+    	<caption class="hideoff">Top frame table</caption>
+      <tr>
+        <td>
+          <div class="topTabs bgBanner" id="topTabs">
+  
+            <div class="brandingImgWrap">
+              <a href="https://www.aber.ac.uk/" target="_blank" title="Blackboard Learn">
+                <img src="/branding/_1_1/header_institution.png"
+                     class="bannerImage"
+                     alt="Blackboard Learn"
+                     title="Blackboard Learn" />
+              </a>
+            </div>
+  
+            <div class="tabWrapper-right">
+              <H2 CLASS="hideoff">Top Frame Tabs</H2>
+              <table class="appTabs round2" id="appTabList">
+            	  <caption class="hideoff">Tab List table</caption>
+                <tr>
+                 <td id="Student.label"  >
+                      <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_11_1" TARGET="_top"><span>Student</span>
+                        <span class="hideoff"> Tab 1 of 3</span>
+                      </a>
+                    </td>
+                  <td id="Modules.label"  class="active"  >
+                      <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_55_1" TARGET="_top"><span>My Modules</span>
+                        <span class="hideoff"> Tab 2 of 3&nbsp;(active tab)</span>
+                      </a>
+                    </td>
+                  <td id="Study.label"  >
+                      <a href="/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_58_1" TARGET="_top"><span>AberSkills</span>
+                        <span class="hideoff"> Tab 3 of 3</span>
+                      </a>
+                    </td>
+                  </tr>
+              </table>
+              <div class="clearfloats"></div>
+            </div>
+            </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+<div id="globalNavPageContentArea">
+
+<h2 class="hideoff">
+ Current Location
+</h2>
+
+<div id="breadcrumbs" class="breadcrumbs clearfix ">
+
+ <div class="breadcrumb-controls clearfix" id="breadcrumb_controls_id">
+
+
+
+
+
+<div id="helpTextToggle" class="helpLink hidden">
+  <a href="#" id="helpTextToggleLink" class="browseIcon">
+	<img id="helpTextToggleImg" src="/images/ci/ng/small_help_on2.gif" alt="Turn help text off and on"/></a>
+</div>
+ <input type='hidden' name='showHelperSetting' id='showHelperSetting' value=''>
+ </div>
+
+ <div class="path  noToggle" role="navigation">
+ <ol class="clearfix">
+    	<li
+    class="root coursePath"
+        > <a href="/webapps/blackboard/execute/courseMain?course_id=_12888_1"  title="Programming Using an Object-Oriented Language (2015-16)">                  Programming Using an Object-Oriented Language (2015-16)
+              </a>      <div id="arrowContext_1"
+         class="courseArrow"       onClick="page.ContextMenu.changeArrowInBreadcrumb(1, event );">
+<span class="contextMenuContainer" style=" display: inline;" bb:menuGeneratorURL="/webapps/blackboard/execute/getCrossCourseMenuHTML?course_id=_12888_1" bb:navItem="" bb:contextParameters="" bb:menuOrder="" bb:overwriteNavItems="" bb:beforeShowFunc="">
+   
+  <a  id="cmlink_2f920716771544189eea236bb2086253" onfocus="page.ContextMenu.LI(event, 'cmdiv_2f920716771544189eea236bb2086253',false);" onmouseover="page.ContextMenu.LI(event, 'cmdiv_2f920716771544189eea236bb2086253',false);" class="cmimg editmode jsInit " href="#contextMenu" title="Course-to-Course Navigation"> <img src="/images/ci/icons/cmlink_generic.gif" alt=""></a> 
+  <div id="cmdiv_2f920716771544189eea236bb2086253" class="cmdiv" style="display: none;">
+   <ul id="cmul0_2f920716771544189eea236bb2086253"> 
+    <li class="contextmenubar_top">
+      <a href="#close" class="close-menu">
+        <span class="close-contextmenu" data-icon="X" role="presentation" aria-hidden="true"></span>
+        <img alt="Close Menu" src="/images/ci/ng/close_mini.gif"></a>
+    </li>      
+       </ul>   
+  </div>
+</span>
+</div>    </li>
+   	<li
+        > <a href="/webapps/blackboard/content/listContent.jsp?course_id=_12888_1&content_id=_556516_1&mode=reset"  title="Assignments">                  Assignments
+              </a>          </li>
+   	<li
+    class="placeholder"        >                   Review Submission History: Individual assignment: Bonks and Zaps Game
+                        </li>
+  </ol>
+ </div>
+
+</div>
+
+<div class="locationPane">
+ <div id="navigationPane" class="navigationPane ">
+ 
+
+ <div id="menuWrap" class="menuWrap" >
+  <div id="puller" >
+  <a id="menuPuller" class="clickpuller" title="Hide Course Menu" href="#">
+   <img id="expander" alt="Hide Course Menu" src="/images/spacer.gif"/>
+  </a>
+ </div>
+<div class="menuWrap-inner">
+  <input type='hidden' name='blackboard.platform.security.NonceUtil.nonce' value='a11b3bc9-241a-42d8-8f54-3a6caf67cccd'><div id="courseMenuPalette" class="navPalette listCm navPaletteExpCol"><div class="actionBarMicro clearfix"><h2 class="hideoff">Menu Management Options</h2><ul class="nav clearfix u_floatThis-right"><li id="refreshMenuLink" class="secondaryButton "><a href="#" title="Refresh"><span><img src="/images/ci/ng/small_refresh.gif" alt="Refresh"></span></a></li><li id="courseMapButton" class="secondaryButton "><a href="#" title="Display Course Menu in a Window"><span><img src="/images/ci/ng/small_new_window.gif" alt="Display Course Menu in a Window"></span></a></li></ul></div><div class="navPaletteContent"><h2 class="hideoff" tabindex="-1">Course Menu:</h2><div id="courseMenuPalette_paletteTitleHeading"><div class="navPaletteTitle"><h3 aria-expanded="true"><a href="#" class="comboLink" title="Collapse Programming Using an Object-Oriented Language (2015-16)" id="courseMenu_link">Programming Using an Object-Oriented Language (2015-16)</a></h3><h3><a href="/webapps/blackboard/execute/courseMain?course_id=_12888_1" target="" class="submenuLink" id="courseMenu_combo" title="Go to Course Entry Page"><img src="/images/ci/icons/generic_dbl_arrow_right.gif" alt="Course Entry Page"></a></h3></div></div><ul id="courseMenuPalette_contents" class="courseMenu"><li id="paletteItem:_269270_1" class="clearfix "><a href="/webapps/blackboard/content/listContent.jsp?course_id=_12888_1&content_id=_702755_1&mode=reset" target="_self"><span title="Module outline">Module outline</span></a></li><li id="paletteItem:_235662_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&tool_id=_134_1&tool_type=TOOL&mode=view&mode=reset" target="_self"><span title="Announcements">Announcements</span></a></li><li id="paletteItem:_235651_1" class="clearfix "><a href="/webapps/blackboard/content/listContent.jsp?course_id=_12888_1&content_id=_556515_1&mode=reset" target="_self"><span title="Course Information">Course Information</span></a></li><li id="paletteItem:_235652_1" class="clearfix "><a href="/webapps/blackboard/content/listContent.jsp?course_id=_12888_1&content_id=_542709_1&mode=reset" target="_self"><span title="Content">Content</span></a></li><li id="paletteItem:_235653_1" class="clearfix "><a href="/webapps/blackboard/content/listContent.jsp?course_id=_12888_1&content_id=_556516_1&mode=reset" target="_self"><span title="Assignments">Assignments</span></a></li><li id="paletteItem:_235663_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&tool_id=_7_1&tool_type=TOOL&mode=view&mode=reset" target="_self"><span title="Tools">Tools</span></a></li><li id="paletteItem:_235664_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&tool_id=_151_1&tool_type=TOOL&mode=view&mode=reset" target="_self"><span title="Contacts">Contacts</span></a></li><li id="paletteItem:_235665_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&tool_id=_1764_1&tool_type=TOOL&mode=view&mode=reset" target="_self"><span title="Panopto Recordings">Panopto Recordings</span></a></li><li id="paletteItem:_235666_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235666_1&mode=view&mode=reset" target="_self"><span title="Lead-in course">Lead-in course</span></a></li><li id="paletteItem:_235667_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235667_1&mode=view&mode=reset" target="_self"><span title="Slides">Slides</span></a></li><li id="paletteItem:_235668_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235668_1&mode=view&mode=reset" target="_self"><span title="Worksheets">Worksheets</span></a></li><li id="paletteItem:_235669_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235669_1&mode=view&mode=reset" target="_self"><span title="Tutorials">Tutorials</span></a></li><li id="paletteItem:_271799_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_271799_1&mode=view&mode=reset" target="_self"><span title="Supplementary assessment assignment forum">Supplementary assessment assignment forum</span></a></li><li id="paletteItem:_235670_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235670_1&mode=view&mode=reset" target="_self"><span title="Discussion Forum">Discussion Forum</span></a></li><li id="paletteItem:_269271_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_269271_1&mode=view&mode=reset" target="_self"><span title="Feedback Forum">Feedback Forum</span></a></li><li id="paletteItem:_235671_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235671_1&mode=view&mode=reset" target="_self"><span title="Lecture Notes">Lecture Notes</span></a></li><li id="paletteItem:_235672_1" class="clearfix "><a href="/webapps/blackboard/content/launchLink.jsp?course_id=_12888_1&toc_id=_235672_1&mode=view&mode=reset" target="_self"><span title="Aspire Reading List">Aspire Reading List</span></a></li></ul></div></div>
+  </div>
+ </div>
+ </div>
+ <div id="contentPanel" class="contentPane ok ">
+<div class="shadow">
+       <div id="editmodeWrapper"> 
+ 
+  <div id="content" class="contentBox ">
+   
+<div id="pageTitleDiv" class="pageTitle clearfix ">
+
+  
+<div id="pageTitleBar" class='pageTitleIcon' tabindex="0">
+  <img src="/images/ci/sets/set08/assignment_on.gif" alt="" id="titleicon"><h1 id="pageTitleHeader" tabindex="-1" ><span id="pageTitleText">
+  Review Submission History: Individual assignment: Bonks and Zaps Game  </span></h1>
+        <span id="_titlebarExtraContent" class="titleButtons"></span>
+</div>
+
+
+
+</div>
+
+      <div class="container clearfix" id="containerdiv">
+    <h2 class="hideoff">Content</h2>
+    <script type="text/javascript" src="/webapps/achievements/js/achievement.js"></script><script src="/javascript/scriptaculous/version_pinned_scriptaculous.js"></script><link rel="stylesheet" href="/webapps/achievements/css/achievements.css" type="text/css" media="screen" /><script type="text/javascript">
+new Ajax.Request('/webapps/achievements/checkAchievements.form', {
+method:'get',
+asynchronous:true,
+parameters: {courseId: '_12888_1', type: 1 },
+onSuccess: function(response) {
+var jsonArray = response.responseJSON;
+handleAchievements(jsonArray);
+},
+onFailure: function() { alert('Something went wrong...'); }
+});
+</script><!--HelixMedia-->
+<script type="text/javascript" src="/webapps/real-helixmedia-bb_bb60/js/render.jsp"></script>
+<div id="HelixMedia-overlay" style="display:none"></div>
+<!--HelixMedia-->
+<div id="inlineGrader" class="inlineGrader ">
+  
+  <!-- Previewer - Left Panel -->
+  <div id="previewer" class="previewer clearfix"> 
+
+                <!-- Display the instruction and Alignment -->
+
+      <!-- Toggle Button -->
+      <div class="contentDetailsHeader">
+        <a role="tab" class="" href="#" onclick="inlineGrading.gradingUtil.toggleOnEvent( event, $('contentDetails'), false, 'a' );" 
+            title="Click to view/hide content" 
+            aria-expanded=" false">
+          <span>Assignment Instructions</span>
+        </a>
+      </div>
+
+
+     <!--  Tab Panel -->
+    <div class="collapseTabs" id="contentDetails" style=" display:none;  ">
+    
+    <!-- Tabs -->
+               <!--  Content  -->
+         <div class="collapseTabsData" id="contentAreaBlock0">
+                         <div id="instructionId" style="height:auto; overflow:visible;">
+               <div class="vtbegenerated"><div style="color: #111111; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f4f4f4;">
+<div>This is the second individual programming assignment.</div>
+<div>Hand out on Monday 7th March 1pm.</div>
+<div>Hand in on Friday 6th May 4pm.</div>
+<div></div>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 13px;">Here is a Panopto<span class="Apple-converted-space"> </span><span color="#00748b" face="inherit" style="color: #00748b; font-family: inherit;"><span style="border-style: initial; border-color: initial; font-weight: inherit; font-style: inherit;"><span style="text-decoration: underline;"><a href="http://abercast.aber.ac.uk/Panopto/Pages/Viewer.aspx?id=f675c58c-cdee-498e-a217-65bba9a6807d" target="_blank">recording</a></span></span></span><span class="Apple-converted-space"> </span>of my solution running.</p>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 13px;">See the Blackboard discussion<span class="Apple-converted-space"> </span><a href="https://blackboard.aber.ac.uk/webapps/discussionboard/do/forum?action=subscribeForum&forum_id=_9565_1&nav=discussion_board&conf_id=_16417_1&course_id=_12888_1"><span color="#00748b" face="inherit" style="color: #00748b; font-family: inherit;"><span style="border-style: initial; border-color: initial; font-weight: inherit; font-style: inherit;"><span style="text-decoration: underline;">forum</span></span></span></a><span class="Apple-converted-space"> </span>where you can ask questions about the assignment. The assignment requires the use of a sequence diagram. See <a href="https://blackboard.aber.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_556524_1&course_id=_12888_1&mode=cpview#tut6" target="_blank">tutorial 6</a> for an example. Also the <a href="http://www.ibm.com/developerworks/rational/library/3101.html" target="_blank">resource</a> on sequence diagrams.</p>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 13px;">You can obtain the Being interface code (shown in the assignment brief) from the Pastebin link: <a href="http://pastebin.com/Z6qY8hNM" target="_blank">http://pastebin.com/Z6qY8hNM</a></p>
+<div></div>
+<div>PLEASE NOTE: By submitting your work for this assignment using Blackboard, you are making the following declaration: </div>
+<div></div>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 13px;">This submission is my own work, except where clearly indicated.</p>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 13px;">I understand that there are severe penalties for plagiarism and other unfair practice, which can lead to loss of marks or even the withholding of a degree. I have read the sections on unfair practice in the Students’ Examinations Handbook and the relevant sections of the current Student Handbook of the Department of Computer Science. I understand and agree to abide by the University’s regulations governing these issues.</p>
+</div>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: normal; font-style: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; color: #111111; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f4f4f4;">There is no need to submit a separate Declaration of Originality form for this assignment.</p>
+<p style="margin: 0px 0px 1em; padding: 0px; border: 0px; outline: 0px; font-weight: normal; font-style: normal; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: small; color: #111111; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f4f4f4;">See AQRO <a href="http://www.aber.ac.uk/en/academic-quality-records-office/unacceptable-academic-practice/" target="_blank" style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; font-size: 13px; color: #00748b; text-decoration: underline;">Unacceptable Practice Guidelines</a> for more information.</p>
+<br /></div>
+             </div>
+                               </div>
+         
+      </div>
+
+
+    <!-- End displaying the instruction and Alignments -->
+        
+
+  	<div class="previewerInner clearfix" id="previewerInner">
+  	  	
+    <div id="loadingMessage" class="stream_show_more_data" style="">
+    <div class="main-message" >Loading...</div>
+    <div class="extras">Please wait while we render this file</div>
+  </div>
+  <div id="downloadPanel" class="submission download" style="display: none;">
+    <div class="fileTile">
+      <img src="/webapps/assignment/images/download-icon-large.png">
+      <h5 id="downloadPanelFileName"></h5>
+      <a id="downloadPanelButton" href="#" class="download button-1" role="button">Download</a>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+  <!-- Resize Controls -->
+  <div id="resizeControls" class="resizeControls expanded">
+    <a id="maximizer_btn" class="maximizer_btn" role="button" href="#" 
+       onclick="inlineGrading.toggleMaximized( event );"
+       title="Click to maximise/restore view">
+        Click to maximise/restore view
+    </a>
+    <a id="gradingPanelCollapse_btn" class="gradingPanelCollapse_btn expanded" role="button" aria-expanded="true"
+       href="#" onclick="inlineGrading.toggleGradingPanel( event );"
+       title="Click to collapse/expand grading panel">
+       Click to collapse/expand grading panel
+     </a>
+  </div>
+  
+  <!-- GradingPanel - Right Panel -->
+    <div id="gradingPanel" class="gradingPanel  clearfix" role="tablist">
+  <div class="gradingPanelHeader">
+  <a role="tab" class="detailsHeader" href="#" onclick="inlineGrading.gradingUtil.gradingPaneltoggleOnEvent( event, $('assignmentInfo'), false, 'a' );" title="Click to view/hide content" aria-expanded="false">
+    <span>Assignment Details</span>
+  </a>
+</div>
+
+<div role="tabpanel" class="attempt gradingPanelSection" id="assignmentInfo" style="height:auto; overflow:visible;  display:none; ">
+  <h3>Name</h3>
+<p>Individual assignment: Bonks and Zaps Game</p>
+
+<h3>Due Date</h3>
+  <p>06 May 2016 16:00</p>
+<h3>Assignment Files</h3>
+  <ul>
+    <li><a href="/bbcswebdav/pid-721369-dt-content-rid-1058802_1/xid-1058802_1">assignment.pdf</a></li>
+    </ul>
+
+</div>
+<div id="aggregateGradeContainer" class="gradeHeader">
+
+  <form id="aggregateGradeForm" name="aggregateGradeForm">    
+  <h3>
+    <label for="aggregateGrade">
+      <span class="mainLabel" aria-hidden="true" role="presentation">
+              Grade
+            </span>
+    
+      <span class="subHeader" aria-hidden="true" role="presentation">Last Graded Attempt</span>    </label>
+    
+      </h3>       
+  
+        
+  <div id="aggregateGradeContent" class="grade readOnly">
+    
+            <input id="aggregateGrade" type="text" value="-" maxlength="8" readOnly
+           class="gradeEntry " title="Grade"  aria-describedby="aggregateGrade_pointsPossible" aria-label="Grade scored using last graded attempt" >
+
+        
+                                                   
+          <span class="pointsPossible" id="aggregateGrade_pointsPossible">/50</span>
+            
+  </div>  </form>
+  
+  
+  
+</div>
+
+ 
+<div id="currentAttempt">  
+
+
+    <div class="attemptHeader" id="currentAttempt_header" >
+    
+             <div class="attemptHeaderLabel attemptListBtn"> 
+      <h3 id="currentAttempt_label">
+        <label for="currentAttempt_grade">
+             <span class='mainLabel'>Attempt 2  </span>
+                                <span class="subHeader  dateStamp ">
+                        06/05/16 15:31
+                                              </span>
+                  </label>
+      </h3>
+    </div>
+    
+             <div class="grade readOnly">     
+      <input id="currentAttempt_grade" name="grade" class="gradeEntry" type="text" value="" maxlength="8" 
+                            title="Attempt Grade"
+                           readOnly               aria-describedby="currentAttempt_pointsPossible" > 
+                         <span class="pointsPossible" id="currentAttempt_pointsPossible">/50</span> 
+      
+      
+      
+    </div>
+    
+        <a id="currentAttempt_attemptListButton" class="attemptListDropDown" href="#" onclick="inlineGrading.gradingUtil.toggleOnEvent( event, $( 'currentAttempt_attemptList' ), false, 'a' );" role="button" aria-expanded="false" title="Click to show/hide all attempts">
+      Click to show/hide all attempts
+    </a>
+    <div id="currentAttempt_attemptList" class="attemptsList" style="display: none;" role="menu">
+      <ul>
+                <li  >     
+          <a  href="/webapps/assignment//uploadAssignment?course_id=_12888_1&action=showHistory&outcome_definition_id=_79345_1&attempt_id=_464988_1"  class="clearfix attemptInfo" role="button">
+            <label class="attemptNumber" for="attempt__464988_1_points">
+                              <span class="mainLabel">Attempt 1</span>
+                            <span class="subHeader dateStamp">06/05/16 12:57</span>
+            </label>
+            <span class="pointsGraded" id="attempt__464988_1_points"></span>
+          </a> 
+        </li>
+                <li  class="current"  >     
+          <a  href="/webapps/assignment//uploadAssignment?course_id=_12888_1&action=showHistory&outcome_definition_id=_79345_1&attempt_id=_465162_1"  class="clearfix attemptInfo" role="button">
+            <label class="attemptNumber" for="attempt__465162_1_points">
+                              <span class="mainLabel">Attempt 2</span>
+                            <span class="subHeader dateStamp">06/05/16 15:31</span>
+            </label>
+            <span class="pointsGraded" id="attempt__465162_1_points"></span>
+          </a> 
+        </li>
+              </ul>
+    </div>
+    
+
+        
+  </div>
+    
+  
+    <div id="currentAttempt_content" class="attemptContent" style="height: auto; overflow: visible;">    
+
+            
+         
+          
+        <div id="currentAttempt_submission" class="segment">
+ 
+      <h4>Submission</h4>
+ 
+      <ul id="currentAttempt_submissionList" class="filesList">
+                <li>
+          <a id="currentAttempt_attemptFile_545453_1" class="attachment genericFile" href="#"
+              onclick="gradeAssignment.inlineView( event, '_545453_1', '_465162_1' );" >
+            Bonks and Zaps Writeup.pdf
+          </a>
+                    <div class="downloadFile">
+            <a class="dwnldBtn" href="/webapps/assignment//download?course_id=_12888_1&amp;attempt_id=_465162_1&amp;file_id=_545453_1&amp;fileName=Bonks%20and%20Zaps%20Writeup.pdf" role="button"></a>
+          </div>
+                  </li>
+                <li>
+          <a id="currentAttempt_attemptFile_545454_1" class="attachment genericFile" href="#"
+              onclick="gradeAssignment.inlineView( event, '_545454_1', '_465162_1' );" >
+            code.zip
+          </a>
+                    <div class="downloadFile">
+            <a class="dwnldBtn" href="/webapps/assignment//download?course_id=_12888_1&amp;attempt_id=_465162_1&amp;file_id=_545454_1&amp;fileName=code.zip" role="button"></a>
+          </div>
+                  </li>
+                <li>
+          <a id="currentAttempt_attemptFile_545455_1" class="attachment genericFile" href="#"
+              onclick="gradeAssignment.inlineView( event, '_545455_1', '_465162_1' );" >
+            BonksAndZaps.jar
+          </a>
+                    <div class="downloadFile">
+            <a class="dwnldBtn" href="/webapps/assignment//download?course_id=_12888_1&amp;attempt_id=_465162_1&amp;file_id=_545455_1&amp;fileName=BonksAndZaps.jar" role="button"></a>
+          </div>
+                  </li>
+              </ul>
+  
+    </div>
+      
+      
+    
+    
+
+  </div>
+    
+   
+
+</div>
+
+
+<p class="backLink">  
+               
+<a href="/webapps/bb-mygrades-BBLEARN/myGrades?course_id=_12888_1&stream_name=mygrades&is_stream=false&callback=course"                                                                                              >
+    OK
+  </a>
+
+</p>  
+  
+</div>
+
+
+</div>
+
+   </div>
+   
+     </div>
+   </div> 
+   </div>
+   </div>  
+</div></div>
+
+
+
+
+  <script type="text/javascript">page.bundle.addKey('inlineconfirmation.close','Close');page.bundle.addKey('inlineconfirmation.refresh','Refresh');page.bundle.addKey('hidden.link.close.menu','End of menu. Click to return to associated item.');page.bundle.addKey('hidden.link.close.form','End of form. Click to return to associated item.');page.bundle.addKey('lightbox.loading','Loading...');page.bundle.addKey('yt.stopped','Stopped:');page.bundle.addKey('yt.playing','Playing:');page.bundle.addKey('yt.cued','Cued:');page.bundle.addKey('yt.buffering','Buffering:');page.bundle.addKey('yt.paused','Paused:');page.bundle.addKey('yt.ended','Ended:');page.bundle.addKey('yt.play','Play');page.bundle.addKey('yt.pause','Pause');page.bundle.addKey('yt.mute','Mute');page.bundle.addKey('yt.unmute','Unmute');page.bundle.addKey('lightbox.overlay','{0} has been opened as a lightbox overlaying the current page.');page.bundle.addKey('display.playerControls','Player Controls');page.bundle.addKey('display.videoPlayerControls','Video Player Controls');page.bundle.addKey('display.play','Play');page.bundle.addKey('display.stop','Stop');page.bundle.addKey('display.volumeUp','Volume Up');page.bundle.addKey('display.volumeDown','Volume Down');page.bundle.addKey('display.mute','Mute');page.bundle.addKey('display.videoStatus','Video Status');page.bundle.addKey('display.closePlayerControls','Close Player Controls');page.bundle.addKey('display.embeddedVideoPlayer','Embedded Video Player');page.bundle.addKey('display.of','of');page.bundle.addKey('display.view.on.flickr','View Photo on Flickr');page.bundle.addKey('mashups.content.data.msg','We are unable to display the mashup content. This happens if the system detects an invalid URL. Remove the mashup item and try again to resolve this issue.');page.bundle.addKey('contextmenu.frame.title','Menu frame');page.bundle.addKey('frameset.contentframe.title','Content');page.bundle.addKey('common.pair.paren','{0} ({1})');page.bundle.addKey('collab.grade.rubric.override.invalid.value','Error: A valid numeric value must be entered: Rubric Total Override.');page.bundle.addKey('rubric.grading.inline.loading','Rubric loading.  Please wait...');page.bundle.addKey('rubric.grading.inline.retrieve.error','Failed to request rubric data for grading inline.');page.bundle.addKey('rubric.grading.raw.total','Raw Total: {0} (of {1})');page.bundle.addKey('rubric.grading.override.total.view.only','The rubric total value of {0} has been overridden with a value of {1} out of {2}.');page.bundle.addKey('rubric.grading.change.number.points','Change the number of points out of {0} to:');page.bundle.addKey('rubric.grading.popup.retrieve.error','An error occurred while trying to load the rubric evaluation information. Please close the window and try loading the rubric again.');page.bundle.addKey('rubric.grading.save.error','An error occurred while trying to save the rubric evaluation information.');page.bundle.addKey('rubric.grading.rubric.id.not.specified.error','An error occurred when trying to load the rubric.  The rubric was not specified.');page.bundle.addKey('rubric.grading.list.position','{0} of {1}');page.bundle.addKey('rubric.association.type.non_grading','Used for Secondary Evaluation');page.bundle.addKey('rubric.association.type.grading','Used for Grading');page.bundle.addKey('rubric.grading.confirm.switch.grading.rubric','Use this rubric as the grading rubric?');page.bundle.addKey('rubric.grading.default.evaluatorTemplate','{0}:  {1}');page.bundle.addKey('aggregate_grade.revert.confirm','Revert override grade?');page.bundle.addKey('aggregate_grade.receipt.success','Success: data processed.');page.bundle.addKey('aggregate_grade.receipt.error','Error: unknown error occurred while processing data.');page.bundle.addKey('aggregate_grade.override.title','Override/revert');page.bundle.addKey('aggregate_grade.revert.title','Revert');page.bundle.addKey('aggregate_grade.overridden.title','Manual Override Grade');page.bundle.addKey('aggregate_grade.grade.input.label','Override Grade');page.bundle.addKey('attempt_grading.rubric.button.label','Rubric');page.bundle.addKey('attempt_grading.receipt.success','Success: data processed.');page.bundle.addKey('attempt_grading.receipt.error','Error: unknown error occurred while processing data.');page.bundle.addKey('attempt_grading.grade.input.label','Attempt Grade');page.bundle.addKey('attempt_grading.rubric.receipt','Rubric Evaluation Report');page.bundle.addKey('attempt_grading.rubric.submit','Save Rubric');page.bundle.addKey('attempt_grading.grade.clear.confirm','Clear attempt grade?');page.bundle.addKey('coursemenu.show','Show Course Menu');page.bundle.addKey('coursemenu.hide','Hide Course Menu');page.bundle.addKey('dynamictree.expand','Expand');page.bundle.addKey('dynamictree.collapse','Collapse');page.bundle.addKey('dynamictree.expand.folder','Expand {0} tree folder');page.bundle.addKey('dynamictree.collapse.folder','Collapse {0} tree folder');page.bundle.addKey('dragdrop.accessible.error.chooseOption','Select an item first.');page.bundle.addKey('dragdrop.accessible.empty','No items available to reposition.');page.bundle.addKey('dragdrop.accessible.complete','Items have been reordered.');page.bundle.addKey('dragdrop.accessible.complete.nochange','No ordering changes made.');page.bundle.addKey('closeStr','Close');page.bundle.addKey('moreOptionsStr','Click to see options');page.bundle.addKey('hiddenStr','This link is hidden from students');page.bundle.addKey('emptyStr','This link has no content');page.bundle.addKey('entryPointChangeConfirmStr','The entry point will be changed to the next available Content');page.bundle.addKey('subheaderColonStr','Subheader {0}');page.bundle.addKey('confirmQuickEnrollStr','You will be given the role: {0}. Proceed?');page.bundle.addKey('enterSearchKeyStr','Enter Search Criteria.');page.bundle.addKey('courseWelcomePageLbTitle','Quick Setup Guide');page.bundle.addKey('expandCollapse.expand.section.nocolon','Expand');page.bundle.addKey('expandCollapse.collapse.section.nocolon','Collapse');page.bundle.addKey('expandCollapse.expand.section.param','Expand {0}');page.bundle.addKey('expandCollapse.collapse.section.param','Collapse {0}');page.bundle.addKey('accessDeniedMsg','Access Denied');page.bundle.addKey('tool.activity.description','activity updates');page.bundle.addKey('breadcrumbs.expand','Click to expand the breadcrumbs');</script>
+  <script type="text/javascript">
+    document.observe("dom:loaded", function()
+    {
+      gradeAssignment.touchUp( false );
+    });
+    </script>
+  
+  <script type='text/javascript'>var courseId ='_12888_1';</script>
+  <script type="text/javascript">
+   var course_id = "_12888_1";
+   var courseTitle = "Programming Using an Object-Oriented Language (2015-16)";
+   var confirmDeleteMenuItemMsg = "Are you sure you want to delete this item?";
+   var confirmQuickUnenrollMsg = "Any user data created while quick-enroled in this course will be deleted. Proceed?";
+   var confirmQuickEnrollMsg = "You will be given the role: Instructor. Proceed?";
+   var inNewWindow = false;
+   var theCourseMenu;
+ </script>
+ 
+  <script type='text/javascript'>globalNavigation.init(); Event.observe(window, 'resize', globalNavigation.onResize);</script>
+  <script type="text/javascript">
+    page.bundle.addKey('globalnav.menu.expand','Expand\x20Global\x20Nav');
+    page.bundle.addKey('globalnav.menu.collapse','Collapse\x20Global\x20Nav');
+  </script>
+  
+  <script type="text/javascript">
+    page.bundle.addKey('quick_links.link.title','Navigate\x20to\x20element\x20\x7B1\x7D\x20of\x20type\x20\x7B2\x7D\x20in\x20\x7B0\x7D\x20frame');
+    page.bundle.addKey('quick_links.lightbox_title','Quick\x20Links');
+    page.bundle.addKey('quick_links.link_title','Open\x20Quick\x20Links');
+    page.bundle.addKey('quick_links.hotkey.shift','Shift');
+    page.bundle.addKey('quick_links.hotkey.control','Ctrl');
+    page.bundle.addKey('quick_links.hotkey.alt','Alt');
+    page.bundle.addKey('quick_links.hotkey.combination_divider','\x2B');
+  </script>
+  
+  <script type="text/javascript">quickLinks.initialize( [ '' ] );</script>
+  <script type="text/javascript">
+            globalNavMenu.init( true );
+          </script>
+        
+  <script type='text/javascript'> social.Profile.MY_PROFILE_TOOL_ID='BB-CORE_____myProfile'; social.Profile.MY_PROFILE_TOOL_URI='/webapps/bb-social-learning-BBLEARN/execute/mybb?cmd=display&toolId=BB-CORE_____myProfile&location='; </script>
+ 
+   <script type="text/javascript">
+   FastInit.addOnLoad( function()
+   {
+            if ( window.DWREngine )
+       {
+        try {DWREngine.beginBatch();} catch(ignore) {}
+       } 
+                page.decoratePageBanner();
+                                                             attemptInlineGrader = new attemptGrading.inlineGrader( 'currentAttempt', '', '', 'false' );
+                                                             attemptListInlineGrader = new inlineGraderList.keyboardAccessible( 'currentAttempt_attemptListButton', 'currentAttempt_attemptList' );
+                                                             page.ContextMenu.hideMenuDiv('2f920716771544189eea236bb2086253');
+                                                             new page.PageHelpToggler(true, 'Help is On: Click to hide page help.', 'Help is Off: Click to show page help.', false );
+                                                             breadcrumbs.rightMostNavItem = '';
+                                                             breadcrumbs.rightMostParentURL = '/webapps/blackboard/content/listContent.jsp?course_id=_12888_1&content_id=_556516_1&mode=reset';
+                                                             new page.PageMenuToggler(true,'courseMenuToggle_12888_1', true);
+                                                             courseMenu.nonceKey = 'blackboard.platform.security.NonceUtil.nonce.ajax';
+                                                             courseMenu.nonceValue = 'ad936c56-62b0-4767-beab-416ff16d598b';
+                                                             new page.PaletteController('courseMenuPalette', 'courseMenu_link', false, false);
+                                                             theCourseMenu = new courseMenu.CourseMenu('/webapps/blackboard/execute/doCourseMenuAction', '/webapps/blackboard/execute/getCourseMenuContextMenu');
+                                                             welcomeOverlay.initOverlay();
+                                                             tool_service.init ('300000', 'Suppress-Session-Timestamp-Update' );
+                                                             if (typeof(initEditors) == 'function') { initEditors(); }; 
+                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); }; 
+                                                             quickLinks.createHelper();
+                                                                  if ( window.DWREngine )
+       {
+         try {DWREngine.endBatch();} catch(ignore) {}
+       }
+                          BrowserSpecific.registerListeners();
+                gradeAssignment.init('currentAttempt', '{"status":"CONVERTED","file_id":"_545453_1","fileName":"Bonks and Zaps Writeup.pdf","editMode":"false","viewUrl":"https://crocodoc.com/view/pHM1ZiC1PdOMLZOtNvxtYu4cOd-mJw9Ldh5jLyjX4sjbU0qpZB5tX3FnudBKk2pPflquBtX2TVEFtVzuOmmdsqm4vCZ-gGxfC_rvrZJB6wRRoY7AYcA0DqE-ER4nr0pPYpn3PYavI8263jkP2pVusgkL_lyGVZo"}');
+               });
+   </script>
+       <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42799645-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!--<script src="/webapps/aew-x-au-browserlog-BBLEARN/module/browser_check.jsp"></script>-->
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</body>
+</html>
