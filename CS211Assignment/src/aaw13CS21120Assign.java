@@ -16,6 +16,11 @@ public class aaw13CS21120Assign {
         //mapConverter.printQ();
         long endTime   = System.currentTimeMillis();
         long totalTime = endTime - startTime;
+
+        treeMaker maker = new treeMaker();
+        maker.setCharList(mapConverter.getCharList());
+        maker.init();
+        maker.main();
         System.out.println(totalTime);
 
     }

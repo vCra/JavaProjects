@@ -21,13 +21,8 @@ public class parent extends CharObj {
         this.right = right;
     }
 
-    public long getCount() {
-        return count;
+    public void genQty(){
+        super.setQty(getLeft().getQty()+getRight().getQty());
     }
 
-    public void setCount(long count) {
-        this.count = count;
-    }
-
-    long count;
 }

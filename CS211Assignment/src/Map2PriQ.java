@@ -8,6 +8,10 @@ import java.util.Iterator;
 public class Map2PriQ {
     private Map<Integer, Integer> charCount;
 
+    public PriorityQueue<CharObj> getCharList() {
+        return charList;
+    }
+
     PriorityQueue<CharObj> charList = new PriorityQueue<CharObj>(5, new Comparator<CharObj>() {
         public int compare(CharObj char1, CharObj char2){
             if (char1.getQty() > char2.getQty()){
