@@ -4,7 +4,7 @@ import java.util.*;
  * Created by aaron@vcra.net on 13/11/16.
  */
 public class treeMaker {
-    private parent head;
+    private CharObj head;
     private PriorityQueue charList;
 
     public PriorityQueue getCharList() {
@@ -16,34 +16,42 @@ public class treeMaker {
     }
 
     public void init() {
-        parent currentHead = new parent();
+        CharObj currentHead = new CharObj();
         currentHead.setLeft((CharObj) charList.poll());
         currentHead.setRight((CharObj) charList.poll());
         currentHead.genQty();
+        charList.offer(currentHead);
         this.head = currentHead;
     }
 
     public void main() {
-        parent lastHead = this.head;
-        this.head = new parent();
-        if (getCharList().size() > 0){
-            CharObj obj = (CharObj) charList.poll();
-            System.out.println("last qty - " + lastHead.getQty());// + " | obj qty - " + obj.getQty());
-            if (lastHead.getQty() > obj.getQty()){
-                this.head.setLeft(lastHead);
-                this.head.setRight(obj);
-                this.head.genQty();
+        CharObj newHead = new CharObj();
+        if (getCharList().size() > 1){
+            CharObj obj1 = (CharObj) charList.poll();
+            CharObj obj2 = (CharObj) charList.poll();
+            if (obj2.getQty() > obj1.getQty()){
+                newHead.setLeft(obj2);
+                newHead.setRight(obj1);
+                newHead.genQty();
+                charList.offer(newHead);
             }
             else{
-                this.head.setRight(lastHead);
-                this.head.setLeft(obj);
-                this.head.genQty();
+                newHead.setRight(obj2);
+                newHead.setLeft(obj1);
+                newHead.genQty();
+                charList.offer(newHead);
             }
+            System.out.println("last qty - " + newHead.getQty());// + " | obj qty - " + obj.getQty());
             main();
         }
+        else{
+            this.head = newHead;
+        }
     }
-    public void genNumbers(parent p, int bin){
+    public void genNumbers(CharObj p, int bin){
         //
     }
+
+
 }
 

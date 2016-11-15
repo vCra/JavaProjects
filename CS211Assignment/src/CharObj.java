@@ -5,6 +5,28 @@ public class CharObj {
     public int key;
     public int qty;
     public int bin;
+    private CharObj left;
+    private CharObj right;
+
+    public CharObj getLeft() {
+        return left;
+    }
+
+    public void setLeft(CharObj left) {
+        this.left = left;
+    }
+
+    public CharObj getRight() {
+        return right;
+    }
+
+    public void setRight(CharObj right) {
+        this.right = right;
+    }
+
+    public void genQty(){
+        setQty(getLeft().getQty()+getRight().getQty());
+    }
     public CharObj(int key, int qty){
         setKey(key);
         setQty(qty);

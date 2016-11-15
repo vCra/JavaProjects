@@ -28,7 +28,7 @@ public class Map2PriQ {
         setMap(map);
     }
 
-    private void addToQ(CharObj e){
+    public void addToQ(CharObj e){
         charList.offer(e);
     }
 
