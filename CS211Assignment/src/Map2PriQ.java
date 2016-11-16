@@ -7,13 +7,8 @@ import java.util.Iterator;
  */
 public class Map2PriQ {
     private Map<Integer, Integer> charCount;
-
-    public PriorityQueue<CharObj> getCharList() {
-        return charList;
-    }
-
-    PriorityQueue<CharObj> charList = new PriorityQueue<CharObj>(5, new Comparator<CharObj>() {
-        public int compare(CharObj char1, CharObj char2){
+    private CharObj head;
+    private PriorityQueue<CharObj> charList = new PriorityQueue<CharObj>(5, new Comparator<CharObj>() {public int compare(CharObj char1, CharObj char2){
             if (char1.getQty() > char2.getQty()){
                 return -1;
             } else if (char1.getQty() == char2.getQty()){
@@ -26,6 +21,9 @@ public class Map2PriQ {
 
     Map2PriQ(Map map){
         setMap(map);
+    }
+    public PriorityQueue<CharObj> getCharList() {
+        return charList;
     }
 
     public void addToQ(CharObj e){
@@ -52,6 +50,60 @@ public class Map2PriQ {
     public void printQ(){
         while (charList.size() > 0){
             System.out.println(charList.poll().toString());
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void init() {
+        System.out.print("hi");
+        CharObj currentHead = new CharObj();
+        currentHead.setLeft((CharObj) charList.poll());
+        currentHead.setRight((CharObj) charList.poll());
+        currentHead.genQty();
+        charList.offer(currentHead);
+        this.head = currentHead;
+    }
+
+    public void main() {
+        System.out.print(charList);
+        CharObj newHead = new CharObj();
+        if (getCharList().size() > 1){
+            CharObj obj1 = (CharObj) charList.poll();
+            CharObj obj2 = (CharObj) charList.poll();
+            if (obj2.getQty() > obj1.getQty()){
+                newHead.setLeft(obj2);
+                newHead.setRight(obj1);
+                newHead.genQty();
+            }
+            else{
+                newHead.setRight(obj2);
+                newHead.setLeft(obj1);
+                newHead.genQty();
+
+            }
+            charList.offer(newHead);
+            System.out.println("last qty - " + newHead.getQty());// + " | obj qty - " + obj.getQty());
+            main();
+        }
+        else{
+            this.head = newHead;
         }
     }
 }

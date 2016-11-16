@@ -27,6 +27,7 @@ public class CharObj {
     public void genQty(){
         setQty(getLeft().getQty()+getRight().getQty());
     }
+
     public CharObj(int key, int qty){
         setKey(key);
         setQty(qty);

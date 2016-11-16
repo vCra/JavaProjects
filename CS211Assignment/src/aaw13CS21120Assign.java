@@ -13,14 +13,13 @@ public class aaw13CS21120Assign {
         Map chars = finder.getMap();
         Map2PriQ mapConverter = new Map2PriQ(chars);
         mapConverter.getFromMap();
-        //mapConverter.printQ();
+        mapConverter.printQ();
+
+        mapConverter.init();
+        mapConverter.main();
+
         long endTime   = System.currentTimeMillis();
         long totalTime = endTime - startTime;
-
-        treeMaker maker = new treeMaker();
-        maker.setCharList(mapConverter.getCharList());
-        maker.init();
-        maker.main();
         System.out.println(totalTime);
 
     }

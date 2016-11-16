@@ -3,12 +3,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Frequency Finder
- *
- * Find the frequency of characters in a
- * Created by aaron@vcra.net on 10/11/16.
+ * Created by aaron@vcra.net on 16/11/16.
  */
-public class FrequencyFinder {
+public class aaw13CS211Assign {
     private BufferedReader reader;
     private String textFileLocation;
     private Map<Integer, Integer> charCount;
@@ -56,5 +53,4 @@ public class FrequencyFinder {
         file2map();
         //charCount.forEach((a,b)-> System.out.println((char) a.intValue()+", "+b));
     }
-
 }
