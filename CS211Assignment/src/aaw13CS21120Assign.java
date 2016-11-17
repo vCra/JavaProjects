@@ -7,16 +7,16 @@ public class aaw13CS21120Assign {
         long startTime = System.currentTimeMillis();
 
         FrequencyFinder finder = new FrequencyFinder();
-        finder.setTextFile("/test/shakespere.txt");
+        finder.setTextFile("/test/morse.txt");
         finder.makeMap();
 
         Map chars = finder.getMap();
         Map2PriQ mapConverter = new Map2PriQ(chars);
         mapConverter.getFromMap();
-        mapConverter.printQ();
-
-        mapConverter.init();
-        mapConverter.main();
+        //mapConverter.printQ();
+        mapConverter.firstTree();
+        mapConverter.makeTree();
+        //System.out.print(mapConverter.dict.toString());
 
         long endTime   = System.currentTimeMillis();
         long totalTime = endTime - startTime;

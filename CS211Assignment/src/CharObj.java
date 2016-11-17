@@ -32,7 +32,7 @@ public class CharObj {
         setKey(key);
         setQty(qty);
     }
-    public CharObj(){};
+    public CharObj(){}
 
     public int getKey() {
         return key;

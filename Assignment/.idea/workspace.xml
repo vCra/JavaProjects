@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09f34a35-0741-4a78-8e36-aa765e1bc610" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assignment.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/aaw13CS211Assign.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../CS211Assignment/src/treeMaker.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CS211Assignment/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CS211Assignment/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CS211Assignment/src/CharObj.java" afterPath="$PROJECT_DIR$/../CS211Assignment/src/CharObj.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CS211Assignment/src/FrequencyFinder.java" afterPath="$PROJECT_DIR$/../CS211Assignment/src/FrequencyFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CS211Assignment/src/Map2PriQ.java" afterPath="$PROJECT_DIR$/../CS211Assignment/src/Map2PriQ.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CS211Assignment/src/aaw13CS21120Assign.java" afterPath="$PROJECT_DIR$/../CS211Assignment/src/aaw13CS21120Assign.java" />
     </list>
     <ignored path="Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -571,12 +560,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479329927811</updated>
-      <workItem from="1479329930765" duration="469000" />
+      <workItem from="1479329930765" duration="502000" />
     </task>
+    <task id="LOCAL-00001" summary="Reupload&#10;">
+      <created>1479330421012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1479330421012</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469000" />
+    <option name="totallyTimeSpent" value="502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="956" y="27" width="956" height="921" extended-state="4" />
@@ -618,6 +615,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Reupload&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reupload&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
