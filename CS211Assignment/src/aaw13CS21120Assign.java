@@ -7,7 +7,7 @@ public class aaw13CS21120Assign {
         long startTime = System.currentTimeMillis();
 
         FrequencyFinder finder = new FrequencyFinder();
-        finder.setTextFile("/test/morse.txt");
+        finder.setTextFile("/test/bitFull");
         finder.makeMap();
 
         Map chars = finder.getMap();
@@ -15,8 +15,6 @@ public class aaw13CS21120Assign {
         mapConverter.getFromMap();
         //mapConverter.printQ();
         mapConverter.firstTree();
-        mapConverter.makeTree();
-        //System.out.print(mapConverter.dict.toString());
 
         long endTime   = System.currentTimeMillis();
         long totalTime = endTime - startTime;

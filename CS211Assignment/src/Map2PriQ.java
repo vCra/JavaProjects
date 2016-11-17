@@ -18,12 +18,10 @@ public class Map2PriQ {
             else return 1;
         }
     });
-    public StringBuilder dict;
 
 
     Map2PriQ(Map map){
         setMap(map);
-        dict = new StringBuilder();
     }
     public PriorityQueue<CharObj> getCharList() {
         return charList;
@@ -57,12 +55,17 @@ public class Map2PriQ {
     }
 
     public void firstTree() {
+        if (charList.size()<2){
+            System.out.println("Specified file does not contain enough variation between characters!");
+            System.exit(4);
+        }
         CharObj currentHead = new CharObj();
         currentHead.setLeft((CharObj) charList.poll());
         currentHead.setRight((CharObj) charList.poll());
         currentHead.genQty();
         charList.offer(currentHead);
         this.head = currentHead;
+        makeTree();
     }
 
     public void makeTree() {
@@ -85,13 +88,15 @@ public class Map2PriQ {
         }
         else{
             this.head = newHead;
+            Map<Integer, String> dict = new Map<>();
             genCodes(newHead, "");
+
         }
     }
     public void genCodes(CharObj node, String previous){
         if (node.getKey() != (-1)){
-            dict.append(previous);
             System.out.println(node.getKey() + " - " + previous);
+
         }
         else {
             this.genCodes(node.getLeft(),previous+"0");

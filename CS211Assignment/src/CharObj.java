@@ -4,7 +4,6 @@
 public class CharObj {
     public int key;
     public int qty;
-    public int bin;
     private CharObj left;
     private CharObj right;
 
