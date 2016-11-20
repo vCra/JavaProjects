@@ -1,7 +1,4 @@
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.Comparator;
-import java.util.Iterator;
+import java.util.*;
 import java.lang.StringBuilder;
 /**
  * Created by aaron@vcra.net on 12/11/16.
@@ -9,6 +6,7 @@ import java.lang.StringBuilder;
 public class Map2PriQ {
     private Map<Integer, Integer> charCount;
     private CharObj head;
+    private Map dict;
     private PriorityQueue<CharObj> charList = new PriorityQueue<CharObj>(5, new Comparator<CharObj>() {public int compare(CharObj char1, CharObj char2){
             if (char1.getQty() < char2.getQty()){
                 return -1;
@@ -63,9 +61,14 @@ public class Map2PriQ {
         currentHead.setLeft((CharObj) charList.poll());
         currentHead.setRight((CharObj) charList.poll());
         currentHead.genQty();
+        currentHead.setKey(-1);
         charList.offer(currentHead);
         this.head = currentHead;
         makeTree();
+    }
+
+    public Map getDict() {
+        return dict;
     }
 
     public void makeTree() {
@@ -88,19 +91,21 @@ public class Map2PriQ {
         }
         else{
             this.head = newHead;
-            Map<Integer, String> dict = new Map<>();
-            genCodes(newHead, "");
+            dict = new HashMap<Integer, String>();
+            genCodes(newHead, "", dict);
+
 
         }
     }
-    public void genCodes(CharObj node, String previous){
+    public void genCodes(CharObj node, String previous, Map dict){
         if (node.getKey() != (-1)){
-            System.out.println(node.getKey() + " - " + previous);
+            //System.out.println(node.getKey() + " - " + previous);
+            dict.put(node.getKey(), previous);
 
         }
         else {
-            this.genCodes(node.getLeft(),previous+"0");
-            this.genCodes(node.getRight(), previous+"1");
+            this.genCodes(node.getLeft(),previous+"0", dict);
+            this.genCodes(node.getRight(), previous+"1", dict);
         }
     }
 }
