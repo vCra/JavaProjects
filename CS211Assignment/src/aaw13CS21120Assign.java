@@ -6,7 +6,7 @@ import java.util.Map;
 public class aaw13CS21120Assign {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        String fileName="/test/random3.txt";
+        String fileName="/test/shakespere.txt";
 
         FrequencyFinder finder = new FrequencyFinder();
         finder.setTextFile(fileName);
@@ -16,7 +16,7 @@ public class aaw13CS21120Assign {
         Map2PriQ mapConverter = new Map2PriQ(chars);
         mapConverter.getFromMap();
         //mapConverter.printQ();
-        mapConverter.firstTree();
+        mapConverter.makeNewTree();
 
         fileHandler fh = new fileHandler();
         fh.setDict(mapConverter.getDict());

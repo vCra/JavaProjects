@@ -1,11 +1,9 @@
 import java.util.*;
-import java.lang.StringBuilder;
 /**
  * Created by aaron@vcra.net on 12/11/16.
  */
 public class Map2PriQ {
     private Map<Integer, Integer> charCount;
-    private CharObj head;
     private Map dict;
     private PriorityQueue<CharObj> charList = new PriorityQueue<CharObj>(5, new Comparator<CharObj>() {public int compare(CharObj char1, CharObj char2){
             if (char1.getQty() < char2.getQty()){
@@ -21,21 +19,21 @@ public class Map2PriQ {
     Map2PriQ(Map map){
         setMap(map);
     }
-    public PriorityQueue<CharObj> getCharList() {
+
+    private PriorityQueue<CharObj> getCharList() {
         return charList;
     }
 
-    public void addToQ(CharObj e){
+    private void addToQ(CharObj e){
         charList.offer(e);
     }
 
-    public void setMap(Map map){
+    private void setMap(Map map){
         this.charCount = map;
     }
 
-    public CharObj convert(int a, int b){
+    private CharObj convert(int a, int b){
         return new CharObj(a,b);
-
     }
 
     public void getFromMap(){
@@ -46,13 +44,14 @@ public class Map2PriQ {
             it.remove(); // avoids a ConcurrentModificationException
         }
     }
-    public void printQ(){
+
+    private void printQ(){ //Will empty the charList...
         while (charList.size() > 0){
             System.out.println(charList.poll().toString());
         }
     }
 
-    public void firstTree() {
+    public void makeNewTree() {
         if (charList.size()<2){
             System.out.println("Specified file does not contain enough variation between characters!");
             System.exit(4);
@@ -63,15 +62,14 @@ public class Map2PriQ {
         currentHead.genQty();
         currentHead.setKey(-1);
         charList.offer(currentHead);
-        this.head = currentHead;
-        makeTree();
+        makeTreeNode();
     }
 
     public Map getDict() {
         return dict;
     }
 
-    public void makeTree() {
+    private void makeTreeNode() {
         //System.out.print(charList);
 
         CharObj newHead = new CharObj();
@@ -86,16 +84,33 @@ public class Map2PriQ {
         //System.out.println("last qty - " + newHead.getQty());// + " | obj qty - " + obj.getQty());
         if (getCharList().size() > 0){
             charList.add(newHead);
-            makeTree();
+            makeTreeNode();
 
         }
         else{
-            this.head = newHead;
             dict = new HashMap<Integer, String>();
             genCodes(newHead, "", dict);
 
 
         }
+    }
+    public int genNodeCount(CharObj node, int currentCount){
+        int count = currentCount;
+        if (node.getKey() != (-1)){
+            return count+1;
+        }
+        else {
+            count = count + this.genNodeCount(node.getLeft(),currentCount);
+            count = count + this.genNodeCount(node.getRight(), currentCount);
+        }
+        return count;
+    }
+    public void getAverageTreeDepth(CharObj tree){
+        {}
+    }
+    private int genNodeDepth(CharObj node, int depth, int count){
+        {}
+        return 1;
     }
     public void genCodes(CharObj node, String previous, Map dict){
         if (node.getKey() != (-1)){

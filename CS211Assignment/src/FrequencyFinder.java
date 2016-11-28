@@ -27,16 +27,16 @@ public class FrequencyFinder {
     private void createMap(){
         charCount = new HashMap<>();
     }
+
     public Map getMap(){
-
         return charCount;
-
     }
-    private void file2map(){
+
+    private void readFile(){
         int o;//Stores the current value of the object we are getting
         try {
-            while ((o=reader.read())>0){
-                if(charCount.containsKey(o))
+            while ((o=reader.read())>0){ //The number of characters left in the file is greater than 0
+                if(charCount.containsKey(o)) // Our map already contains the key that has just been found ing the file
                 {
                     charCount.put(o,charCount.get(o)+1); //If it exists in the map already, then get the current count and add 1 to it.
                 }
@@ -50,10 +50,12 @@ public class FrequencyFinder {
             e.printStackTrace();
         }
     }
+
     public void makeMap(){
+        //We could throw an error if they is currently no text file set
         setReader();
         createMap();
-        file2map();
+        readFile();
         //charCount.forEach((a,b)-> System.out.println((char) a.intValue()+", "+b));
     }
 

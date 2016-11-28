@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="608ad864-863a-43f6-ab53-10eaee8cae7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrequencyFinder.java" afterPath="$PROJECT_DIR$/src/FrequencyFinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Map2PriQ.java" afterPath="$PROJECT_DIR$/src/Map2PriQ.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aaw13CS21120Assign.java" afterPath="$PROJECT_DIR$/src/aaw13CS21120Assign.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fileHandler.java" afterPath="$PROJECT_DIR$/src/fileHandler.java" />
     </list>
     <ignored path="CS112Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="aaw13CS21120Assign.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aaw13CS21120Assign.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/aaw13CS21120Assign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="216">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -43,24 +43,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrequencyFinder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FrequencyFinder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map2PriQ.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Map2PriQ.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Map2PriQ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+            <state relative-caret-position="82">
+              <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1984#1985#0" expanded="true" />
+                <element signature="e#224#233#0" expanded="true" />
+                <element signature="method#compare#0;class#241:531" expanded="false" />
+                <element signature="e#3013#3014#0" expanded="true" />
+                <element signature="e#3030#3031#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,11 +61,9 @@
       <file leaf-file-name="fileHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fileHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
+            <state relative-caret-position="510">
               <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,8 +71,8 @@
       <file leaf-file-name="CharObj.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CharObj.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -113,12 +103,12 @@
         <option value="$PROJECT_DIR$/src/treeRoot.java" />
         <option value="$PROJECT_DIR$/src/parent.java" />
         <option value="$PROJECT_DIR$/src/treeMaker.java" />
-        <option value="$PROJECT_DIR$/src/FrequencyFinder.java" />
         <option value="$PROJECT_DIR$/src/CharObj.java" />
         <option value="$PROJECT_DIR$/src/dictCreator.java" />
-        <option value="$PROJECT_DIR$/src/Map2PriQ.java" />
         <option value="$PROJECT_DIR$/src/fileHandler.java" />
+        <option value="$PROJECT_DIR$/src/FrequencyFinder.java" />
         <option value="$PROJECT_DIR$/src/aaw13CS21120Assign.java" />
+        <option value="$PROJECT_DIR$/src/Map2PriQ.java" />
       </list>
     </option>
   </component>
@@ -130,8 +120,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1026" />
+    <option name="width" value="1366" />
+    <option name="height" value="714" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -159,8 +149,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,6 +183,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -699,7 +689,12 @@
       <workItem from="1479416609666" duration="4500000" />
       <workItem from="1479421629317" duration="145000" />
       <workItem from="1479476703436" duration="9875000" />
-      <workItem from="1479648645675" duration="7000" />
+      <workItem from="1479648645675" duration="34000" />
+      <workItem from="1479736995339" duration="2626000" />
+      <workItem from="1479820462555" duration="1002000" />
+      <workItem from="1479991210002" duration="1024000" />
+      <workItem from="1480095823862" duration="1016000" />
+      <workItem from="1480328728181" duration="1051000" />
     </task>
     <task id="LOCAL-00001" summary="Implamented HashMap and File Reading.">
       <created>1478980466443</created>
@@ -743,15 +738,22 @@
       <option name="project" value="LOCAL" />
       <updated>1479421763376</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed filesize difference">
+      <created>1479648672777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1479648672777</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53070000" />
+    <option name="totallyTimeSpent" value="59816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="27" width="1366" height="714" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -760,22 +762,22 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635468" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37186477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4187568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17760417" sideWeight="0.49618322" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.49618322" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39694658" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5759494" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17760417" sideWeight="0.5038168" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561985" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881773" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -798,19 +800,12 @@
     <MESSAGE value="Corrected tree implamentation" />
     <MESSAGE value="Generated Binary for leaves" />
     <MESSAGE value="Started Implamentation of file handling for encoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started Implamentation of file handling for encoding" />
+    <MESSAGE value="Fixed filesize difference" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed filesize difference" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Map2PriQ.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="32" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,8 +846,10 @@
         <state relative-caret-position="198">
           <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -889,8 +886,10 @@
         <state relative-caret-position="1224">
           <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -927,8 +926,10 @@
         <state relative-caret-position="1224">
           <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,8 +966,10 @@
         <state relative-caret-position="270">
           <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -995,8 +998,10 @@
         <state relative-caret-position="234">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1026,8 +1031,10 @@
         <state relative-caret-position="144">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1065,8 +1072,10 @@
         <state relative-caret-position="126">
           <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1105,8 +1114,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1161,48 +1172,48 @@
     <entry file="file://$PROJECT_DIR$/src/dictCreator.java" />
     <entry file="file://$PROJECT_DIR$/src/CharObj.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrequencyFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fileHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
+        <state relative-caret-position="510">
           <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FrequencyFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Map2PriQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aaw13CS21120Assign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="216">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Map2PriQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="e#224#233#0" expanded="true" />
+            <element signature="method#compare#0;class#241:531" expanded="false" />
+            <element signature="e#3013#3014#0" expanded="true" />
+            <element signature="e#3030#3031#0" expanded="true" />
           </folding>
         </state>
       </provider>
