@@ -29,6 +29,16 @@ public class fileHandler {
             e.printStackTrace();
         }
     }
+
+    public int genFixedLengthBits(int Count) { //Generates the minimunm number of bits we need need per item to store all possible objects.
+        return (int) Math.ceil(Math.log(Count) / Math.log(2));
+    }
+
+    public long genFixedLengthSize(File file, Map m) {
+        int bitLength = genFixedLengthBits(m.size());
+        long fileLengthBits = (file.length());
+        return (bitLength * fileLengthBits) / 8;
+    }
     public long genSize(String file){
         setupReader(file);
         long length = 0;
@@ -58,4 +68,21 @@ public class fileHandler {
         //System.out.println("size - " + length + " bytes");
         return length;
     }
+
+    public void genDictFile(Map dict, String fileLocation) {
+        try {
+            PrintWriter writer = new PrintWriter(fileLocation.concat(".dict"), "UTF-8");
+            Iterator it = dict.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry pair = (Map.Entry) it.next();
+                writer.println(pair.getKey() + "-" + pair.getValue());
+                it.remove(); // avoids a ConcurrentModificationException
+            }
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }
