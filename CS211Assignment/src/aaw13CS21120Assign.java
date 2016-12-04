@@ -22,31 +22,43 @@ public class aaw13CS21120Assign {
             finder.makeMap();
 
             Map chars = finder.getMap();
-            Map2PriQ mapConverter = new Map2PriQ(chars);
-            mapConverter.getFromMap();
-            //mapConverter.printQ();
-            mapConverter.makeNewTree();
+            treeBuilder tb = new treeBuilder(chars);
+            tb.getFromMap();
+            //tb.printQ();
+            tb.makeNewTree();
 
             fileHandler fh = new fileHandler();
-            fh.setDict(mapConverter.getDict());
+            fh.setDict(tb.getDict());
 
             float huffmanSize = fh.genSize(fileName);
             float originalSize = file.length();
-            float fixedSize = fh.genFixedLengthSize(file, mapConverter.getDict());
+            float fixedSize = fh.genFixedLengthSize(file, tb.getDict());
             float percentageDifference = (originalSize - huffmanSize) / originalSize * 100;
-
+            float ratio = originalSize/huffmanSize;
+            float ratio2 = fixedSize/huffmanSize;
+            int nodecount = tb.getNodeCount();
+            int treeHight = tb.getHight();
+            float averageDepth = tb.getAverageDepth();
             long endTime = System.currentTimeMillis();
             long totalTime = endTime - startTime;
 
+
             System.out.println("The Original size of the file was " + (long) originalSize + "bytes.");
             System.out.println("When Compressed with huffman encoding the size is " + (long) huffmanSize + "bytes.");
-            System.out.println("When Compressed with Fixed Length encoding the size is " + (long) fixedSize + "bytes\n");
+            System.out.println("This gives a difference of ratio " + ratio) ;
+            System.out.println("When Compressed with Fixed Length encoding the size is " + (long) fixedSize + "bytes");
+            System.out.println("The compression ratio between Fixed length and huffman is: "+ ratio2);
+            System.out.println("The height is "+treeHight);
+            System.out.println("The tree has " + nodecount + " nodes.");
+            System.out.println("The average depth of the tree is "+ averageDepth);
 
-            System.out.println("Difference is " + percentageDifference + "%\n");
+
+
+            //System.out.println("Difference is " + percentageDifference + "%\n");
             System.out.println("Time - " + totalTime + "ms\n");
             System.out.println("Would you like to save a dictionry for the encoding? (y/n): ");
             if (scanner.next().equals("y")) {
-                fh.genDictFile(mapConverter.getDict(), fileName);
+                fh.genDictFile(tb.getDict(), fileName);
             }
 
         } else {

@@ -1,10 +1,13 @@
 import java.util.*;
+
+
 /**
  * Created by aaron@vcra.net on 12/11/16.
  */
-public class Map2PriQ {
+public class treeBuilder {
     private Map<Integer, Integer> charCount;
     private Map dict;
+    private CharObj tree;
     private PriorityQueue<CharObj> charList = new PriorityQueue<CharObj>(5, new Comparator<CharObj>() {public int compare(CharObj char1, CharObj char2){
             if (char1.getQty() < char2.getQty()){
                 return -1;
@@ -16,7 +19,7 @@ public class Map2PriQ {
     });
 
 
-    Map2PriQ(Map map){
+    treeBuilder(Map map){
         setMap(map);
     }
 
@@ -90,37 +93,62 @@ public class Map2PriQ {
         else{
             dict = new HashMap<Integer, String>();
             genCodes(newHead, "", dict);
-
+            tree = newHead;
 
         }
     }
-    public int genNodeCount(CharObj node, int currentCount){
-        int count = currentCount;
+    public int getNodeCount(){
+        return genNodeCount(tree, 0);
+    }
+    private int genNodeCount(CharObj node, int currentCount){
         if (node.getKey() != (-1)){
-            return count+1;
+            return currentCount+1;
         }
         else {
-            count = count + this.genNodeCount(node.getLeft(),currentCount);
-            count = count + this.genNodeCount(node.getRight(), currentCount);
+            return this.genNodeCount(node.getLeft(),currentCount) + this.genNodeCount(node.getRight(), currentCount) +1;
         }
-        return count;
     }
-    public void getAverageTreeDepth(CharObj tree){
-        {}
+
+    public int getHight(){
+        return findDeepest(tree, 0);
     }
-    private int genNodeDepth(CharObj node, int depth, int count){
-        {}
-        return 1;
+    private int findDeepest(CharObj node, int deepest){
+        if (node.getKey() != (-1)){
+            if (node.getDepth() > deepest){
+                return node.getDepth();
+            }
+            else{
+                return deepest;
+            }
+        }
+        else {
+            return Math.max(findDeepest(node.getLeft(), deepest), findDeepest(node.getRight(), deepest));
+        }
     }
+    public float getAverageDepth(){
+        System.out.println("Total Depth:"+ genTotalDepths(tree));
+        return (float) genTotalDepths(tree)/(float)genNodeCount(tree, 0);
+    }
+    private int genTotalDepths(CharObj node){
+        if (node.getKey() != (-1)){
+            return node.getDepth();
+        }
+        else {
+            return this.genTotalDepths(node.getLeft()) + this.genTotalDepths(node.getRight()) + node.getDepth();
+        }
+    }
+
     public void genCodes(CharObj node, String previous, Map dict){
         if (node.getKey() != (-1)){
             //System.out.println(node.getKey() + " - " + previous);
             dict.put(node.getKey(), previous);
+            node.setDepth(previous.length());
 
         }
         else {
             this.genCodes(node.getLeft(),previous+"0", dict);
             this.genCodes(node.getRight(), previous+"1", dict);
+            node.setDepth(previous.length());
         }
     }
 }

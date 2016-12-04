@@ -28,9 +28,11 @@ public class FrequencyFinder {
         charCount = new HashMap<>();
     }
 
+
     public Map getMap(){
         return charCount;
     }
+
 
     private void readFile(){
         int o;//Stores the current value of the object we are getting
@@ -50,6 +52,7 @@ public class FrequencyFinder {
             e.printStackTrace();
         }
     }
+
 
     public void makeMap(){
         //We could throw an error if they is currently no text file set

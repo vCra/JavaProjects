@@ -6,6 +6,17 @@ public class CharObj {
     public int qty;
     private CharObj left;
     private CharObj right;
+    private int depth;
+
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
+    }
+
 
     public CharObj getLeft() {
         return left;
