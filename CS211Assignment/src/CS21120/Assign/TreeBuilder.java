@@ -7,7 +7,7 @@ import java.util.*;
  * Created by aaron@vcra.net on 12/11/16.
  * Builds a huffman tree and adds nodes to it in order to generate a dict for encoding a file
  */
-class treeBuilder {
+class TreeBuilder {
     private Map<Integer, Integer> charCount;
     private Map<Integer, String> dict;
     private CharObj tree;
@@ -27,7 +27,7 @@ class treeBuilder {
      *
      * @param map the map to build the tree from
      */
-    treeBuilder(Map<Integer, Integer> map) {
+    TreeBuilder(Map<Integer, Integer> map) {
         setMap(map);
     }
 

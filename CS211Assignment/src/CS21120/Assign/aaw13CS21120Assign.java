@@ -29,12 +29,12 @@ public class aaw13CS21120Assign {
             finder.makeMap();
 
             Map<Integer, Integer> chars = finder.getMap();
-            treeBuilder tb = new treeBuilder(chars);
+            TreeBuilder tb = new TreeBuilder(chars);
             tb.getFromMap();
             //tb.printQ();
             tb.makeNewTree();
 
-            fileHandler fh = new fileHandler();
+            FileHandler fh = new FileHandler();
             fh.setDict(tb.getDict());
 
             float huffmanSize = fh.genSize(fileName);

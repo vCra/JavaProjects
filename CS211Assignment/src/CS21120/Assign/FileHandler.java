@@ -10,7 +10,7 @@ import java.util.Map;
  * Provides file related methods
  * Does not handle file access for adding to map - see frequency finder
  */
-class fileHandler {
+class FileHandler {
     private Map dict;
     private BufferedReader reader;
 
