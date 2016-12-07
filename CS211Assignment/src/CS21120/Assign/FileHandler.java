@@ -12,7 +12,7 @@ import java.util.Map;
  */
 class FileHandler {
     private Map dict;
-    private BufferedReader reader;
+    private BufferedInputStream reader;
 
     void setDict(Map dict) {
         this.dict = dict;
@@ -21,7 +21,7 @@ class FileHandler {
 
     private void setupReader(String file){
         try{
-            this.reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+            this.reader = new BufferedInputStream(new FileInputStream(file));
         }
         catch (FileNotFoundException e){
             e.printStackTrace();

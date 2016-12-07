@@ -1,9 +1,8 @@
 package CS21120.Assign;
 
-import java.io.BufferedReader;
+import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +13,7 @@ import java.util.Map;
  * Created by aaron@vcra.net on 10/11/16.
  */
 class FrequencyFinder {
-    private BufferedReader reader;
+    private BufferedInputStream reader;
     private String textFileLocation;
     private Map<Integer, Integer> charCount;
 
@@ -30,7 +29,7 @@ class FrequencyFinder {
      */
     private void setReader(){
         try{
-            this.reader = new BufferedReader(new InputStreamReader(new FileInputStream(this.textFileLocation)));
+            this.reader = new BufferedInputStream(new FileInputStream(this.textFileLocation));
         }
         catch (FileNotFoundException e){e.printStackTrace();}
     }
@@ -55,7 +54,7 @@ class FrequencyFinder {
     private void readFile(){
         int o;//Stores the current value of the object we are getting
         try {
-            while ((o=reader.read())>0){ //The number of characters left in the file is greater than 0
+            while ((o = reader.read()) != -1) { //The number of characters left in the file is greater than 0
                 if(charCount.containsKey(o)) // Our map already contains the key that has just been found ing the file
                 {
                     charCount.put(o,charCount.get(o)+1); //If it exists in the map already, then get the current count and add 1 to it.
