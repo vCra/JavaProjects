@@ -42,7 +42,7 @@ class FrequencyFinder {
     }
 
     /**
-     * @return a map with the frequencys of a file in
+     * @return a map with the frequency of a file in
      */
     Map<Integer, Integer> getMap() {
         return charCount;

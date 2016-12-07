@@ -8,10 +8,7 @@ import java.util.*;
  * Builds a huffman tree and adds nodes to it in order to generate a dict for encoding a file
  */
 class TreeBuilder {
-    private Map<Integer, Integer> charCount;
-    private Map<Integer, String> dict;
-    private CharObj tree;
-    private PriorityQueue<CharObj> charList = new PriorityQueue<>(5, new Comparator<CharObj>() {
+    private final PriorityQueue<CharObj> charList = new PriorityQueue<>(5, new Comparator<CharObj>() {
         public int compare(CharObj char1, CharObj char2) {
             if (char1.getQty() < char2.getQty()){
                 return -1;
@@ -21,6 +18,9 @@ class TreeBuilder {
             else return 1;
         }
     });
+    private Map<Integer, Integer> charCount;
+    private Map<Integer, String> dict;
+    private CharObj tree;
 
     /**
      * Constructor for the tree builder
@@ -132,7 +132,6 @@ class TreeBuilder {
             dict = new HashMap<>();
             genCodes(newHead, "", dict);
             tree = newHead;
-
         }
     }
 
@@ -154,7 +153,6 @@ class TreeBuilder {
 
     /**
      * gets the height of the tree
-     *
      * @return int the height of the tree
      */
     int getHeight(){
@@ -180,7 +178,7 @@ class TreeBuilder {
      * @return float the average depth of the tree
      */
     float getAverageDepth(){
-        System.out.println("Total Depth:"+ genTotalDepths(tree));
+        //System.out.println("Total Depth:"+ genTotalDepths(tree));
         return (float) genTotalDepths(tree)/(float)genNodeCount(tree, 0);
     }
     private int genTotalDepths(CharObj node){
@@ -193,7 +191,7 @@ class TreeBuilder {
     }
 
     /**
-     * Generates the binary encodings for each node of the tree
+     * Generates the binary encodings for each node of the tre
      * Is a recursive function
      *
      * @param node     the head of the tree to start at

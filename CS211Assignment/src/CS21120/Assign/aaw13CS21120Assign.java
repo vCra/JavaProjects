@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author aaw13
  * @version 0.1
  */
-public class aaw13CS21120Assign {
+class aaw13CS21120Assign {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

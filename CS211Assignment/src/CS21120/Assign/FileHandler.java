@@ -28,7 +28,7 @@ class FileHandler {
         }
     }
 
-    private int genFixedLengthBits(int Count) { //Generates the minimunm number of bits we need need per item to store all possible objects.
+    private int genFixedLengthBits(int Count) { //Generates the minimum number of bits we need need per item to store all possible objects.
         return (int) Math.ceil(Math.log(Count) / Math.log(2));
     }
 
@@ -44,7 +44,7 @@ class FileHandler {
         int o;//Stores the current value of the object we are getting
 
         try {
-            while ((o=reader.read())>0){
+            while ((o = reader.read()) != -1) {
                  //System.out.println(o)
                 try{
                     //System.out.println(dict.get(o));
