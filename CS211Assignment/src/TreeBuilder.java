@@ -1,5 +1,3 @@
-package CS21120.Assign;
-
 import java.util.*;
 
 
@@ -66,9 +64,8 @@ class TreeBuilder {
     private CharObj convert(int a, int b) {
         return new CharObj(a, b);
     }
-
     /**
-     * Gets all elements from the map, converts them in to charObjs and then adds them to the priority Queue
+     * Gets all elements from the map, converts them in to char Objects and then adds them to the priority Queue
      */
     void getFromMap(){
         Iterator it = charCount.entrySet().iterator();

@@ -1,5 +1,3 @@
-package CS21120.Assign;
-
 import java.io.*;
 import java.util.Iterator;
 import java.util.Map;
@@ -49,13 +47,11 @@ class FileHandler {
                 try{
                     //System.out.println(dict.get(o));
                     length = length +((String) dict.get(o)).length();
-                }
-                catch (java.lang.NullPointerException e){
+                } catch (NullPointerException e) {
                     System.out.println("Error - key: " + o + " | "+ e);
                 }
             }
-        }
-        catch (java.io.IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         if ((length % 8) == 0){

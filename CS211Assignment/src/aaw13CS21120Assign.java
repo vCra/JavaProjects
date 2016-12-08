@@ -1,6 +1,3 @@
-package CS21120.Assign;
-
-
 import java.io.File;
 import java.util.Map;
 import java.util.Scanner;

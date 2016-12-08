@@ -1,5 +1,3 @@
-package CS21120.Assign;
-
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

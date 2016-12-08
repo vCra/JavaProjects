@@ -1,5 +1,3 @@
-package CS21120.Assign;
-
 /**
  * Created by aaron@vcra.net on 12/11/16.
  * @author aaw13@aber.ac.uk
