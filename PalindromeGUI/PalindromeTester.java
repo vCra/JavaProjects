@@ -1,4 +1,3 @@
-package PalindromeGUI;
 
 import java.util.Stack;
 import java.util.LinkedList;
