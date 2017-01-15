@@ -1,0 +1,127 @@
+\documentclass[11pt, oneside]{amsart}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\title{CS21120 Report: The Huffman Project}
+\author{Aaron Walker}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+The basic idea of this project was to produce a system that would take in a text file (which uses ASCII encoding) and calculate statistic on the file, including generating a fixed length encoding, a Huffman encoding and comparing the results between them, in addition to the original file. We implemented the encoding of the files using a Huffman tree, taking into consideration the time and space complexity of the data structures and algorithms that we use along the way.
+\section{System Design}
+	The project is split up into several classes:
+	\begin{itemize}
+		\item Aaw13CS21120Assign - the main class that stores the general flow of the program
+		\item CharObj - a class that contains a ?node? of the tree, as well as its properties
+		\begin{itemize}
+			\item Mainly contains getters and setters for its properties
+			\item genQty() sets the qty as the qty got from the left and right node added together
+		\end{itemize}
+		\item FileHandler - Generates various file associated statistics, as well as generating the dictionary file which holds the encodings
+		\begin{itemize}
+			\item setupReader - sets up the buffered input stream which is on top of a file input stream - this is used so that we can read files - the buffering increases speed and memory efficiency. It is called setup reader as it previously used a reader
+			\item genFixedLengthBits(int x) - calculates the number of bits needed to store x elements
+			\item genFixedLengthSixe(File, Map) - calculate the size of a fixed length file
+			\item genSize(String file) - generates the would be size of a file if encoded with huffman
+			\item genDictFile - generates a .dict file for the Huffman encoding
+		\end{itemize}
+		\item FrequencyFinder - Generates the frequency of occurrences of a character in a file and stores it in a map
+		\begin{itemize}
+			\item Contains various getters and setters
+			\item readFile - reads the file into a hashMap
+			\item makeMap() = calls the functions needed to find the frequency
+		\end{itemize}
+		\item Tree Builder - Generates a Huffman tree by accessing nodes from a priority queue. Also, traverses tree to generate codes and statistics
+		\begin{itemize}
+			\item Contains various getters and setters
+			\item the class should contain a priority queue with an appropiate comparator
+			\item Convert(int a, int b) - converts a key and a value into a CharObj type
+			\item getFromMap - should get all values from a map and add them to the priority queueas the correct type
+			\item makeNewTree() - should create a tree from the data in the priority queue
+			\item makeTreeNode() - should make a node of a tree and recurse so that it eventually creates a tree
+			\item genNodeCount() - should generate the count of nodes in the tree by traversing it
+			\item getHeight() - should return the Hight of the tree
+			\item findDeepest(CharObj node, int deepest) - should recurse through the tree and find the deepest element in the tree
+			\item getAverageDepth() - should calculate the average depth of the tree
+			\item genTotalDepths(CharObj node) - calculates the sum of all depths in the tree
+			\item genCodes(CharObj node, String previous, Map dict) - should recursively generate binary encodings for the tree and store them in a map
+		\end{itemize}
+	\end{itemize}
+	I designed my program with data structures that are time efficient, to minimise the run time of the program. I also wanted to ensure that all types of files could be read, rather than just text, even though it is mainly text files that would benefit most from this form of compression due to their nature.
+\section{System Implementation and Operation}
+	\subsection{General System Flow}
+		\begin{enumerate}
+			\item getting the name of the file to read
+			\item Creating a file reader in order to read the file
+			\item reading the file by each byte and then inserting it into a hash map.
+			\item iterating through the hash map and inserting the data into the priority queue
+			\item build the tree by taking 2 nodes from the priority queue and adding them to a node, then placing them back into the queue
+			\item recurse through the tree, generating the binary value of each leaf, and adding it to a map
+			\item go through the file again, but this time calculating the size of the file based on the length of each new binary string
+			\item generate various stats on the tree, such as the number of nodes and the
+		average depth
+			\item Optionally generate a .dict file based on the new encoding scheme
+		\end{enumerate}
+	\subsection{Reading the file and calculating adding them to hash map}
+		To read the file, we use a BufferedInputStrem to read the file byte by byte - this allows us to receive an integer value for each byte (rather than a string or a char as used in other implementations).Originally, I used a FileReader, and then a BufferedReader on top of this, but then came across issues when encoding files that are not plain text (such as pictures and ISO?s). I would check if the current value that I just read in is in my map - If it was I would increase the value (in this case being used to store the frequency) by one, otherwise creating the item
+	\subsection{Creating a comparator for the priority queue}
+		For our data to be inputted into a priority queue, we need a way of telling the queue if the new data item is bigger than or smaller than the current item in the queue it is comparing. To do this we compare the CharObj?s .getQty() method and return the appropriate number accordingly
+	\subsection{Adding Data to a priority queue}
+		To add a node to the queue, we use the addToQ method which calls the charList.offer(CharObj e) method. However, when we are adding the data from the map, It would be in the format of two integers. We create a CharObj using its constructor.
+	\subsection{Iterating through a map}
+		To iterate through the map, I created an iterator for the map, and used that to iterate thought the map. This Allowed me to get both the key and value of the map at the same time. When I got the data from the map I translated it to a CharObj and put it in the queue
+	\subsection{Creating a tree}
+		In order to create a tree I did the following:
+		\begin{enumerate}
+			\item Create a new node (in this case a CharObj) - get two nodes from the priority queue and add them as the left and right children of the new node respectively
+			\item Generate a new frequency of the new node by adding the nodes of the 2 children.
+			\item Add the node back into the priority queue. Because of the datatype of the queue, it will insert the new 	node into the right place in the queue.
+			\item This will repeat until they Is one node left in the queue, which will be the resulting tree.
+		\end{enumerate}
+	\subsection{Calculating the number of nodes in the tree}
+		To do this, we traversed the tree. We were passed the node we are trying to search from (which would be the root of the tree) and the number of nodes before that point. We called the same function for the left and right node, unless the node was a leaf, in which case we just returned the current count + 1
+	\subsection{Finding the deepest node in the tree}
+		We did this in a similar way to calculating the number of nodes, but rather than returning a 1 for leaf nodes, ran node.getDepth(), which is set when generating the binary encoding based on the length of the binary string. This is more efficient than having to traverse the tree to get the depth of a single node
+	\subsection{Generating Binary codes for Huffman}
+		Generating codes is another traversal of the tree - for each left and right node we run the same method but appending a ?0? or a ?1? to our previous String respectively. When we get to a leaf node we add the binary string into a new dictionary (in this case I?m using a map because I am unfamiliar with Java Dictionary?s) and set the depth of the node based on the length of the string - this will help with statistical generation.
+	\subsection{Generating the size of a file if encoded using fixed length encoding}
+		To do this, we look at our original map we got from reading the file, and look at how many different elements they are inside of it. We can calculate how many bits we need via Math.ceil(Math.log(Count) / Math.log(2)); We then count how many bytes are in the original file, and then times this by our new number to return the total size
+	\subsection{Generating a .dict file in order to store the translations}
+		For this, we wanted to generate a human readable file that would allow humans to convert the encoded file back into the original file. This was done by iterating over the new dictionary map and adding the key and binary string to the file with ?-? to break up them both.
+\section{Time and space complexity}
+	\subsection{Reading a file}
+		Reading a file consists of setting up a reader, and then reading in byte one by one, until we reach theend of the file. For this the time complexity would be O(n).
+	\subsection{Adding to a map}
+		When we read from a file, we check if the thing we have just read exists in the file - if it does then we add one to the value, if not we create it in the map and then set the value to one. The time complexity would be O(1) and the space complexity would be O(n).
+	\subsection{Adding to a priority queue}
+		Adding data to the priority queue requires O(log(n)) time. Retrieving data from the priority queue requires O(1). The space complexity would be O(n).
+	\subsection{Creating a tree}
+		Creating a tree requires taking 2 elements from the tree, creating a new node and then adding it back in. This requires a time complexity of O(n log(n))
+\section{Self-Assessment}
+	They were several things that I could improve on within this project:
+	\begin{itemize}
+		\item I could devise a way of generating a file with the correct binary encodings. I did not do this, as java does not have a simple way of writing bit level data to a file - It only supports byte level - this would mean having to concatenate my strings to fill up a byte (and deal with binary strings bigger than a byte) and dealing with any space that is left over.
+		\item I could have included the size of the .dict file in my calculations, so that a more realistic view of compression ratios are produced.
+		\item I should have separated my priority queue from by treeBuilder, so that both could be more reusable.
+		\item I should have concentrated more on reusability of my code to structure it better
+		\item I could have improved on the commenting on my code - while most methods are commented, some are not, and commenting all methods will aid maintenance in the future.
+		\item No automated tests were created, although the code was tested against test data on blackboard
+		\item I Could have used a lambda for my comparator in my priority queue. However, I was not familiar with lambdas so decided against it - this was the only warning my project had after completion.
+	\end{itemize}
+	They were some good parts of the project:
+	\begin{itemize}
+		\item Sensible class and method names were used
+		\item Recursion is used to minimise code duplication
+	\end{itemize}
+\section{Notes}
+	I did not include the .class files within the zip project as I submitted it before we were told to do so and then not do so in conflicting emails - It does not say to do it on the spec to do this.
+	To compile the project just unzip it and then run javac against the aaw13CS21120Assign.java file and then run java against the created .class file with the same name
+	\subsection{Things I'm proud of}
+	\begin{itemize}
+		\item Calculating the fixed length size
+		\item Able to read In multiple different types of files - not just text files - this was tested against 2 pictures of cats and an Ubuntu ISO (The Ubuntu ISO took a total of 95 seconds, which probably should be analysed to see if anything could be improved)
+	\end{itemize}
+\end{document}
